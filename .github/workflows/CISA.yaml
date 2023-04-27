@@ -1,0 +1,75 @@
+name: CISA KEV
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 14 * * 1,2,3,4,5'
+
+jobs:
+  CISA-KEV:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: CISA KEV
+      run: |
+        mv cisa-kev.csv cisa-kev-old.csv
+        curl --silent --output cisa-kev.csv https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
+        echo "differenceVAR=$(diff cisa-kev-old.csv cisa-kev.csv | wc -l)" >> $GITHUB_ENV
+        rm cisa-kev-old.csv
+
+    - name: Fetch CVEs from Nuclei
+      run: |
+        curl -s https://api.github.com/repos/projectdiscovery/nuclei-templates/contents/cves | jq -r '.[].name' | while read line; do curl -s https://api.github.com/repos/projectdiscovery/nuclei-templates/contents/cves/$line | jq -r '.[].name' >> NucleiList.txt; done
+        sed -i 's/.yaml//g' NucleiList.txt
+        sort -u NucleiList.txt -o NucleiList.txt
+
+# Check for Nuclei and CISA KEV exact matches
+    - name: Check for exact matches
+      run: |
+        grep -Fxvf NucleiList.txt cisa-kev.csv > CISA-Scannable-List.txt
+  
+
+    - name: Declare VARs
+      run: |
+           echo "totalVAR=$(wc -l < cisa-kev.csv)" >> $GITHUB_ENV
+           echo "nucleiVAR=$(wc -l < CISA-Scannable-List.txt)" >> $GITHUB_ENV
+           
+
+    - name: VAR Output Validation
+      run: |
+         echo "Total Vulnerabilities: ${{ env.totalVAR }}"
+         echo "New vulnerabilities added: ${{ env.differenceVAR }}"
+         echo "CISA Scannable list: ${{ env.nucleiVAR }}"
+
+    - name: Slack Notification
+      if: env.differenceVAR > 0
+      uses: slackapi/slack-github-action@v1.23.0
+      with:
+          payload: |
+           {
+            "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.differenceVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`",
+            "blocks": [
+             {
+               "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                 "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.differenceVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`"
+                }
+             }
+            ]
+            }
+
+    - name: Commit changes
+      run: |
+          git config --local user.email "rchudasama@kynd.io"
+          git config --local user.name "CISA KEV"
+          git add .
+          git commit -m "CISA KEV Updates" -a || true
+          git push
