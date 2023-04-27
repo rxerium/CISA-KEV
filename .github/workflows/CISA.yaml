@@ -33,7 +33,8 @@ jobs:
 # Check for Nuclei and CISA KEV exact matches
     - name: Check for exact matches
       run: |
-       grep -o NucleiList.txt cisa-kev.csv | sort | uniq > CISA-Scannable-List.txt
+       grep -f NucleiList.txt cisa-kev.csv | sort | uniq > CISA-Scannable-List.txt
+
   
 
     - name: Declare VARs
