@@ -23,6 +23,7 @@ jobs:
         curl --silent --output cisa-kev.csv https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
         echo "differenceVAR=$(diff cisa-kev-old.csv cisa-kev.csv | wc -l)" >> $GITHUB_ENV
         rm cisa-kev-old.csv
+        echo "CISAVAR=$(( ${{ env.differenceVAR }} - 1 ))" >> $GITHUB_ENV
 
     - name: Fetch CVEs from Nuclei
       run: |
@@ -46,7 +47,7 @@ jobs:
     - name: VAR Output Validation
       run: |
          echo "Total Vulnerabilities: ${{ env.totalVAR }}"
-         echo "New vulnerabilities added: ${{ env.differenceVAR }}"
+         echo "New vulnerabilities added: ${{ env.CISAVAR }}"
          echo "CISA Scannable list: ${{ env.nucleiVAR }}"
 
     - name: Slack Notification
@@ -55,13 +56,13 @@ jobs:
       with:
           payload: |
            {
-            "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.differenceVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`",
+            "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.CISAVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`",
             "blocks": [
              {
                "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                 "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.differenceVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`"
+                 "text": "📈 *CISA's KEV has been updated!*\n\n New vulnerabilities added: `${{ env.CISAVAR }}`\nTotal Vulnerabilities: `${{ env.totalVAR }}`\nCISA Scannable list: `${{ env.nucleiVAR }}`"
                 }
              }
             ]
