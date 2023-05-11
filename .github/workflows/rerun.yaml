@@ -1,0 +1,55 @@
+name: Rerun Failed Job
+
+on:
+  workflow_run:
+    workflows: ["CISA KEV"]
+    types:
+      - completed
+
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check previous job outcome
+        id: check_job
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const outcome = context.payload.workflow_run.jobs['CISA-KEV'].conclusion;
+            return outcome === 'failure';
+
+      - name: Rerun job
+        if: steps.check_job.outputs.rerun == 'true'
+        id: rerun_job
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: workflow } = await octokit.actions.getWorkflowRun({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.payload.workflow_run.id
+            });
+
+            await octokit.actions.reRunWorkflow({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: workflow.id
+            });
+
+      - name: Check rerun job outcome
+        if: steps.rerun_job.outcome == 'failure'
+        id: check_rerun_job
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const outcome = context.payload.workflow_run.jobs[steps.rerun_job.outputs.run_id].conclusion;
+            return outcome === 'failure';
+
+      - name: Handle rerun failure
+        if: steps.check_rerun_job.outputs.rerun != 'true'
+        run: |
+          echo "Rerun job failed again. Skipping further reruns."
