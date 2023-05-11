@@ -42,14 +42,17 @@ jobs:
            echo "$totalVAR1=$(${{ env.totalVAR }} - 3)" >> $GITHUB_ENV
 
            echo "nucleiVAR=$(wc -l < CISA-Scannable-List.txt)" >> $GITHUB_ENV
-           
+  
+    - name: Step is going to fail
+      run: exit 1
 
     - name: VAR Output Validation
+      if: ${{ failure() }}
       run: |
          echo "Total Vulnerabilities: ${{ env.totalVAR1 }}"
          echo "New vulnerabilities added: ${{ env.differenceVAR }}"
          echo "CISA Scannable list: ${{ env.nucleiVAR }}"
-
+         
     - name: Slack Notification
       if: env.differenceVAR > 0
       uses: slackapi/slack-github-action@v1.23.0
