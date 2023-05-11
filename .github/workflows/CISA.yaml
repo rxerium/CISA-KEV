@@ -41,6 +41,7 @@ jobs:
            echo "totalVAR=$(wc -l < cisa-kev.csv)" >> $GITHUB_ENV
 
            echo "nucleiVAR=$(wc -l < CISA-Scannable-List.txt)" >> $GITHUB_ENV
+           exit 1
            
 
     - name: VAR Output Validation
