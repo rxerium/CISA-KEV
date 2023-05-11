@@ -44,7 +44,7 @@ jobs:
            
 
     - name: VAR Output Validation
-      if: ${{ failure() }}
+      if: ${{ failure() || success() }}
       run: |
          echo "Total Vulnerabilities: ${{ env.totalVAR1 }}"
          echo "New vulnerabilities added: ${{ env.differenceVAR }}"
