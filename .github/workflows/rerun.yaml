@@ -24,6 +24,7 @@ jobs:
 
       - name: Rerun job
         if: steps.check_job.outputs.rerun == 'true' && env.RERUN_ATTEMPT == '0'
+        id: rerun_job
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -43,3 +44,11 @@ jobs:
       - name: Update RERUN_ATTEMPT
         if: steps.check_job.outputs.rerun == 'true' && env.RERUN_ATTEMPT == '0'
         run: echo "RERUN_ATTEMPT=1" >> $GITHUB_ENV
+
+      - name: Set job ID
+        id: set_job_id
+        run: echo "JOB_ID=${{ github.job }}_${{ github.run_number }}" >> $GITHUB_ENV
+
+      - name: Use job ID
+        run: |
+          echo "Job ID: ${{ needs.CISA-KEV.outputs.job_id }}"
