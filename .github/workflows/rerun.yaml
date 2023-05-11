@@ -1,4 +1,4 @@
-name: Rerun Failed Job
+name: Rerun Failed Job Once
 
 on:
   workflow_run:
@@ -9,6 +9,8 @@ on:
 jobs:
   rerun:
     runs-on: ubuntu-latest
+    env:
+      RERUN_ATTEMPT: 0
 
     steps:
       - name: Check previous job outcome
@@ -17,12 +19,11 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const outcome = context.payload.workflow_run.jobs['CISA-KEV'].conclusion;
+            const outcome = context.payload.workflow_run.jobs['rerun'].conclusion;
             return outcome === 'failure';
 
       - name: Rerun job
-        if: steps.check_job.outputs.rerun == 'true'
-        id: rerun_job
+        if: steps.check_job.outputs.rerun == 'true' && env.RERUN_ATTEMPT == '0'
         uses: actions/github-script@v5
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -39,17 +40,6 @@ jobs:
               run_id: workflow.id
             });
 
-      - name: Check rerun job outcome
-        if: steps.rerun_job.outcome == 'failure'
-        id: check_rerun_job
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const outcome = context.payload.workflow_run.jobs[steps.rerun_job.outputs.run_id].conclusion;
-            return outcome === 'failure';
-
-      - name: Handle rerun failure
-        if: steps.check_rerun_job.outputs.rerun != 'true'
-        run: |
-          echo "Rerun job failed again. Skipping further reruns."
+      - name: Update RERUN_ATTEMPT
+        if: steps.check_job.outputs.rerun == 'true' && env.RERUN_ATTEMPT == '0'
+        run: echo "RERUN_ATTEMPT=1" >> $GITHUB_ENV
