@@ -44,13 +44,13 @@ jobs:
            
 
     - name: VAR Output Validation
+      if: ${{ failure() }}
       run: |
          echo "Total Vulnerabilities: ${{ env.totalVAR1 }}"
          echo "New vulnerabilities added: ${{ env.differenceVAR }}"
          echo "CISA Scannable list: ${{ env.nucleiVAR }}"
 
     - name: Slack Notification
-      if: ${{ failure() }}
       uses: slackapi/slack-github-action@v1.23.0
       with:
           payload: |
