@@ -27,7 +27,7 @@ jobs:
     - name: Fetch CVEs from Nuclei
       run: |
         git clone https://github.com/projectdiscovery/nuclei-templates.git
-        find . -type f -name '*CVE-*' > NucleiList.txt
+        find . -type f -name '*CVE-*' -exec basename {} \; > NucleiList.txt
         sed -i 's/.yaml//g' NucleiList.txt
         sort -u NucleiList.txt -o NucleiList.txt
 
