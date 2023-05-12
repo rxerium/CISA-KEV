@@ -29,7 +29,6 @@ jobs:
         git clone https://github.com/projectdiscovery/nuclei-templates.git
         find . -type f -name '*CVE-*' > NucleiList.txt
         sed -i 's/.yaml//g' NucleiList.txt
-        sed -E 's/.*CVE-/CVE-/' NucleiList.txt > NucleiList.txt
         sort -u NucleiList.txt -o NucleiList.txt
 
 
