@@ -39,14 +39,13 @@ jobs:
 
     - name: Declare VARs
       run: |
-           echo "totalVAR=$(wc -l < cisa-kev.csv)" >> $GITHUB_ENV
-           echo totalVAR1=$(( ${{ env.totalVAR }} - 1 ))
+           echo "totalVAR=$(($(wc -l < cisa-kev.csv) - 1))" >> $GITHUB_ENV
            echo "nucleiVAR=$(wc -l < CISA-Scannable-List.txt)" >> $GITHUB_ENV
            
 
     - name: VAR Output Validation
       run: |
-         echo "Total Vulnerabilities: ${{ env.totalVAR1 }}"
+         echo "Total Vulnerabilities: ${{ env.totalVAR }}"
          echo "New vulnerabilities added: ${{ env.differenceVAR }}"
          echo "CISA Scannable list: ${{ env.nucleiVAR }}"
 
