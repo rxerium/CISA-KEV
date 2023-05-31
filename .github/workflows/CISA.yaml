@@ -21,7 +21,7 @@ jobs:
       run: |
         mv cisa-kev.csv cisa-kev-old.csv
         curl --silent --output cisa-kev.csv https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
-        echo "differenceVAR=$(diff cisa-kev-old.csv cisa-kev.csv | wc -l)" >> $GITHUB_ENV
+        echo "differenceVAR=$(($(diff cisa-kev-old.csv cisa-kev.csv | wc -l) - 1 ))" >> $GITHUB_ENV
         rm cisa-kev-old.csv
 
     - name: Fetch CVEs from Nuclei
