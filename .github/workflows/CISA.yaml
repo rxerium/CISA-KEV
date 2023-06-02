@@ -69,7 +69,7 @@ jobs:
 
     - name: Commit changes
       run: |
-          git config --local user.email "rchudasama@kynd.io"
+          git config --local user.email "hakrishi@pm.me"
           git config --local user.name "CISA KEV"
           git add .
           git commit -m "CISA KEV Updates" -a || true
