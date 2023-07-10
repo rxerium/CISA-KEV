@@ -21,8 +21,8 @@ jobs:
       run: |
         mv cisa-kev.csv cisa-kev-old.csv
         curl --silent --output cisa-kev.csv https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
-        echo "cisaOldVAR=$(diff cisa-kev-old.csv | wc -l)" >> $GITHUB_ENV
-        echo "cisaNewVAR=$(diff cisa-kev.csv | wc -l)" >> $GITHUB_ENV
+        echo "cisaOldVAR=$(cisa-kev-old.csv | wc -l)" >> $GITHUB_ENV
+        echo "cisaNewVAR=$(cisa-kev.csv | wc -l)" >> $GITHUB_ENV
         echo "differenceVAR=$(( ${cisaOldVAR} - ${cisaNewVAR} ))" >> $GITHUB_ENV
         rm cisa-kev-old.csv
 
