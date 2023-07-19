@@ -3,7 +3,7 @@ name: CISA KEV
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 15 * * 1,2,3,4,5'
+    - cron: '0 6,15 * * 1,2,3,4,5'
 
 jobs:
   CISA-KEV:
