@@ -6,8 +6,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ## Stats
 
-- **Total CVEs in the KEV**: 1435
-- **Scanning capabilities**: 362
+- **Total CVEs in the KEV**: 1434
+- **Scanning capabilities**: 361
 
 ## Overview
 
