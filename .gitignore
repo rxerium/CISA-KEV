@@ -1,0 +1,40 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output files (keep the folders but ignore contents)
+outputs/graphs/*.png
+outputs/data/*.csv
+outputs/data/*.json
+
+# Keep the directory structure
+!outputs/graphs/.gitkeep
+!outputs/data/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
