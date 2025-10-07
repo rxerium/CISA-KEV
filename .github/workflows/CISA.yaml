@@ -44,6 +44,10 @@ jobs:
            echo "totalVAR=$(($(wc -l < cisa-kev.csv) - 1))" >> $GITHUB_ENV
            echo "nucleiVAR=$(wc -l < CISA-Scannable-List.txt)" >> $GITHUB_ENV
            
+    - name: Update README Stats
+      run: |
+           sed -i "s/\*\*Total CVEs in the KEV\*\*: [0-9]*/\*\*Total CVEs in the KEV\*\*: ${{ env.totalVAR }}/" README.md
+           sed -i "s/\*\*Scanning capabilities\*\*: [0-9]*/\*\*Scanning capabilities\*\*: ${{ env.nucleiVAR }}/" README.md
 
     - name: VAR Output Validation
       run: |
