@@ -1,4 +1,4 @@
-# CISA-KEV
+# CISA-KEV Scanning Capabilities
 
 [![CISA KEV](https://github.com/rxerium/CISA-KEV/actions/workflows/CISA.yaml/badge.svg)](https://github.com/rxerium/CISA-KEV/actions/workflows/CISA.yaml)
 
@@ -6,8 +6,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ## Stats
 
-- **Total CVEs in the KEV**: 1434
-- **Scanning capabilities**: 361
+- **Total CVEs in the KEV**: 1435
+- **Scanning capabilities**: 362
 
 ## Overview
 
