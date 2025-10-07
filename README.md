@@ -1,4 +1,4 @@
-# CISA-KEV Scanning Capabilities
+# CISA-KEV
 
 [![CISA KEV](https://github.com/rxerium/CISA-KEV/actions/workflows/CISA.yaml/badge.svg)](https://github.com/rxerium/CISA-KEV/actions/workflows/CISA.yaml)
 
@@ -272,3 +272,4 @@ All dependencies are listed in `requirements.txt`.
 ## Contact
 
 If you have any questions feel free to reach out to me on [Signal](https://signal.me/#eu/0Qd68U1ivXNdWCF4hf70UYFo7tB0w-GQqFpYcyV6-yr4exn2SclB6bFeP7wTAxQw) or via email: rishi@rxerium.com.
+
