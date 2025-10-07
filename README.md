@@ -4,6 +4,7 @@
 
 A repository that automatically tracks and cross-references CISA's Known Exploitable Vulnerabilities (KEV) list with available Nuclei templates for vulnerability scanning.
 
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -19,8 +20,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 - 🔍 **361 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **295 CVEs** (20.6%) are known to be used in ransomware campaigns
 - 📅 **21 new CVEs** were added in the last 30 days
-- 🔒 Most common vulnerability type: **CWE-20 (Improper Input Validation)** with 111 occurrences
-- ⚠️ **Apache** has the highest scanning coverage at 92.1%, while **Apple** and **Google** have 0%
+- 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
+- ⚠️ **Microsoft** has the highest scanning coverage at 3.8%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 21
@@ -58,13 +59,13 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 5 Vulnerability Types (CWEs)
 | Rank | CWE | Count |
 |------|-----|-------|
-| 1 | CWE-20 (Improper Input Validation) | 111 |
-| 2 | CWE-78 (OS Command Injection) | 94 |
-| 3 | CWE-787 (Out-of-bounds Write) | 93 |
-| 4 | CWE-416 (Use After Free) | 84 |
-| 5 | CWE-119 (Buffer Errors) | 80 |
+| 1 | CWE-20 | 111 |
+| 2 | CWE-78 | 94 |
+| 3 | CWE-787 | 93 |
+| 4 | CWE-416 | 84 |
+| 5 | CWE-119 | 80 |
 
-### Ransomware-Associated CVEs (Top 10 Vendors)
+### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
 | Microsoft | 99 |
@@ -78,7 +79,10 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Statistics last updated: 2025-10-07*
+*Last updated: 2025-10-07*
+
+
+---
 
 ---
 
