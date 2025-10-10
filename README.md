@@ -10,11 +10,12 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,435
-- **Scannable with Nuclei**: 364 (25.4%)
+- **Total CVEs in KEV**: 1,436
+- **Scannable with Nuclei**: 365 (25.4%)
 - **Unscannable**: 1,071 (74.6%)
 - **Ransomware-Associated**: 299 (20.8%)
 - **Unique Vendors**: 235
@@ -22,16 +23,16 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **344 CVEs**
-- 🔍 **364 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **365 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **299 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **22 new CVEs** were added in the last 30 days
+- 📅 **23 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 3.8%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 22
-- **Scannable Added**: 7
-- **New Coverage**: 31.8%
+- **CVEs Added**: 23
+- **Scannable Added**: 8
+- **New Coverage**: 34.8%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
@@ -84,7 +85,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-10-09*
+*Last updated: 2025-10-10*
 
 
 ---
