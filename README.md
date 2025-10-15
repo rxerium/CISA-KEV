@@ -16,33 +16,34 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,436
-- **Scannable with Nuclei**: 370 (25.8%)
-- **Unscannable**: 1,066 (74.2%)
-- **Ransomware-Associated**: 299 (20.8%)
-- **Unique Vendors**: 235
-- **Unique Products**: 583
+- **Total CVEs in KEV**: 1,441
+- **Scannable with Nuclei**: 373 (25.9%)
+- **Unscannable**: 1,068 (74.1%)
+- **Ransomware-Associated**: 300 (20.8%)
+- **Unique Vendors**: 238
+- **Unique Products**: 586
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **344 CVEs**
-- 🔍 **370 CVEs** can be actively scanned with Nuclei templates
-- 🦠 **299 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **22 new CVEs** were added in the last 30 days
+- 🎯 **Microsoft** is the most represented vendor with **346 CVEs**
+- 🔍 **373 CVEs** can be actively scanned with Nuclei templates
+- 🦠 **300 CVEs** (20.8%) are known to be used in ransomware campaigns
+- 📅 **27 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
-- ⚠️ **Microsoft** has the highest scanning coverage at 4.1%, while **Apple** and **Google** have 0%
+- ⚠️ **Microsoft** has the highest scanning coverage at 4.0%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 22
+- **CVEs Added**: 27
 - **Scannable Added**: 7
-- **New Coverage**: 31.8%
+- **New Coverage**: 25.9%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
 |------|--------|-----------|-----------|-------------------|
-| 1 | Microsoft | 344 | 14 | 4.1% |
+| 1 | Microsoft | 346 | 14 | 4.0% |
 | 2 | Apple | 84 | 0 | 0.0% |
 | 3 | Cisco | 81 | 11 | 13.6% |
 | 4 | Adobe | 74 | 9 | 12.2% |
@@ -56,7 +57,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
-| 1 | Windows | 153 |
+| 1 | Windows | 155 |
 | 2 | Multiple Products | 66 |
 | 3 | Chromium V8 | 36 |
 | 4 | Internet Explorer | 34 |
@@ -90,7 +91,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-10-14*
+*Last updated: 2025-10-15*
 
 
 ---
