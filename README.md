@@ -23,38 +23,39 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,442
-- **Scannable with Nuclei**: 379 (26.3%)
-- **Unscannable**: 1,063 (73.7%)
-- **Ransomware-Associated**: 300 (20.8%)
+- **Total CVEs in KEV**: 1,447
+- **Scannable with Nuclei**: 379 (26.2%)
+- **Unscannable**: 1,068 (73.8%)
+- **Ransomware-Associated**: 300 (20.7%)
 - **Unique Vendors**: 238
-- **Unique Products**: 587
+- **Unique Products**: 588
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **346 CVEs**
+- 🎯 **Microsoft** is the most represented vendor with **347 CVEs**
 - 🔍 **379 CVEs** can be actively scanned with Nuclei templates
-- 🦠 **300 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **28 new CVEs** were added in the last 30 days
+- 🦠 **300 CVEs** (20.7%) are known to be used in ransomware campaigns
+- 📅 **33 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.0%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 28
+- **CVEs Added**: 33
 - **Scannable Added**: 7
-- **New Coverage**: 25.0%
+- **New Coverage**: 21.2%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
 |------|--------|-----------|-----------|-------------------|
-| 1 | Microsoft | 346 | 14 | 4.0% |
-| 2 | Apple | 84 | 0 | 0.0% |
+| 1 | Microsoft | 347 | 14 | 4.0% |
+| 2 | Apple | 85 | 0 | 0.0% |
 | 3 | Cisco | 81 | 12 | 14.8% |
 | 4 | Adobe | 75 | 9 | 12.0% |
 | 5 | Google | 65 | 0 | 0.0% |
-| 6 | Oracle | 40 | 15 | 37.5% |
+| 6 | Oracle | 41 | 15 | 36.6% |
 | 7 | Apache | 38 | 35 | 92.1% |
 | 8 | Ivanti | 30 | 18 | 60.0% |
 | 9 | VMware | 26 | 10 | 38.5% |
@@ -63,8 +64,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
-| 1 | Windows | 155 |
-| 2 | Multiple Products | 66 |
+| 1 | Windows | 156 |
+| 2 | Multiple Products | 67 |
 | 3 | Chromium V8 | 36 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
