@@ -31,19 +31,20 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,447
-- **Scannable with Nuclei**: 385 (26.6%)
-- **Unscannable**: 1,062 (73.4%)
+- **Scannable with Nuclei**: 388 (26.8%)
+- **Unscannable**: 1,059 (73.2%)
 - **Ransomware-Associated**: 300 (20.7%)
 - **Unique Vendors**: 238
 - **Unique Products**: 588
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **347 CVEs**
-- 🔍 **385 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **388 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **300 CVEs** (20.7%) are known to be used in ransomware campaigns
 - 📅 **32 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
@@ -51,8 +52,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 32
-- **Scannable Added**: 7
-- **New Coverage**: 21.9%
+- **Scannable Added**: 9
+- **New Coverage**: 28.1%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
