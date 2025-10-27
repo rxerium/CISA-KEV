@@ -32,22 +32,23 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,447
-- **Scannable with Nuclei**: 388 (26.8%)
-- **Unscannable**: 1,059 (73.2%)
+- **Total CVEs in KEV**: 1,449
+- **Scannable with Nuclei**: 389 (26.8%)
+- **Unscannable**: 1,060 (73.2%)
 - **Ransomware-Associated**: 300 (20.7%)
 - **Unique Vendors**: 238
-- **Unique Products**: 588
+- **Unique Products**: 589
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **347 CVEs**
-- 🔍 **388 CVEs** can be actively scanned with Nuclei templates
+- 🎯 **Microsoft** is the most represented vendor with **348 CVEs**
+- 🔍 **389 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **300 CVEs** (20.7%) are known to be used in ransomware campaigns
 - 📅 **32 new CVEs** were added in the last 30 days
-- 🔒 Most common vulnerability type: **CWE-20** (111 occurrences)
+- 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.0%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
@@ -58,10 +59,10 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
 |------|--------|-----------|-----------|-------------------|
-| 1 | Microsoft | 347 | 14 | 4.0% |
+| 1 | Microsoft | 348 | 14 | 4.0% |
 | 2 | Apple | 85 | 0 | 0.0% |
 | 3 | Cisco | 81 | 12 | 14.8% |
-| 4 | Adobe | 75 | 10 | 13.3% |
+| 4 | Adobe | 76 | 11 | 14.5% |
 | 5 | Google | 65 | 0 | 0.0% |
 | 6 | Oracle | 41 | 15 | 36.6% |
 | 7 | Apache | 38 | 35 | 92.1% |
@@ -72,7 +73,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
-| 1 | Windows | 156 |
+| 1 | Windows | 157 |
 | 2 | Multiple Products | 67 |
 | 3 | Chromium V8 | 36 |
 | 4 | Internet Explorer | 34 |
@@ -86,7 +87,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 5 Vulnerability Types (CWEs)
 | Rank | CWE | Count |
 |------|-----|-------|
-| 1 | CWE-20 | 111 |
+| 1 | CWE-20 | 112 |
 | 2 | CWE-78 | 94 |
 | 3 | CWE-787 | 93 |
 | 4 | CWE-416 | 84 |
@@ -106,7 +107,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-10-24*
+*Last updated: 2025-10-27*
 
 
 ---
