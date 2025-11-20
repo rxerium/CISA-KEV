@@ -68,12 +68,13 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,461
-- **Scannable with Nuclei**: 407 (27.9%)
-- **Unscannable**: 1,054 (72.1%)
+- **Total CVEs in KEV**: 1,462
+- **Scannable with Nuclei**: 407 (27.8%)
+- **Unscannable**: 1,055 (72.2%)
 - **Ransomware-Associated**: 302 (20.7%)
 - **Unique Vendors**: 239
 - **Unique Products**: 594
@@ -82,14 +83,14 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 - 🎯 **Microsoft** is the most represented vendor with **349 CVEs**
 - 🔍 **407 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **302 CVEs** (20.7%) are known to be used in ransomware campaigns
-- 📅 **15 new CVEs** were added in the last 30 days
+- 📅 **16 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.3%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 15
+- **CVEs Added**: 16
 - **Scannable Added**: 10
-- **New Coverage**: 66.7%
+- **New Coverage**: 62.5%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
@@ -98,7 +99,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | 2 | Apple | 85 | 0 | 0.0% |
 | 3 | Cisco | 81 | 12 | 14.8% |
 | 4 | Adobe | 76 | 12 | 15.8% |
-| 5 | Google | 65 | 0 | 0.0% |
+| 5 | Google | 66 | 0 | 0.0% |
 | 6 | Oracle | 41 | 17 | 41.5% |
 | 7 | Apache | 38 | 35 | 92.1% |
 | 8 | Ivanti | 30 | 18 | 60.0% |
@@ -110,7 +111,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 |------|---------|-----------|
 | 1 | Windows | 158 |
 | 2 | Multiple Products | 67 |
-| 3 | Chromium V8 | 36 |
+| 3 | Chromium V8 | 37 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
 | 6 | Kernel | 26 |
@@ -142,7 +143,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-11-19*
+*Last updated: 2025-11-20*
 
 
 ---
