@@ -94,28 +94,29 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,468
+- **Total CVEs in KEV**: 1,470
 - **Scannable with Nuclei**: 410 (27.9%)
-- **Unscannable**: 1,058 (72.1%)
-- **Ransomware-Associated**: 302 (20.6%)
+- **Unscannable**: 1,060 (72.1%)
+- **Ransomware-Associated**: 302 (20.5%)
 - **Unique Vendors**: 241
-- **Unique Products**: 596
+- **Unique Products**: 597
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **349 CVEs**
 - 🔍 **410 CVEs** can be actively scanned with Nuclei templates
-- 🦠 **302 CVEs** (20.6%) are known to be used in ransomware campaigns
-- 📅 **13 new CVEs** were added in the last 30 days
+- 🦠 **302 CVEs** (20.5%) are known to be used in ransomware campaigns
+- 📅 **15 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 13
+- **CVEs Added**: 15
 - **Scannable Added**: 5
-- **New Coverage**: 38.5%
+- **New Coverage**: 33.3%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
@@ -129,7 +130,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | 7 | Apache | 38 | 35 | 92.1% |
 | 8 | Ivanti | 30 | 18 | 60.0% |
 | 9 | VMware | 26 | 12 | 46.2% |
-| 10 | D-Link | 24 | 10 | 41.7% |
+| 10 | D-Link | 25 | 10 | 40.0% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
@@ -149,7 +150,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Rank | CWE | Count |
 |------|-----|-------|
 | 1 | CWE-20 | 112 |
-| 2 | CWE-78 | 96 |
+| 2 | CWE-78 | 97 |
 | 3 | CWE-787 | 95 |
 | 4 | CWE-416 | 84 |
 | 5 | CWE-119 | 80 |
@@ -168,7 +169,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-12-08*
+*Last updated: 2025-12-09*
 
 
 ---
