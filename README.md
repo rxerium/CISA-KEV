@@ -104,12 +104,13 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,475
+- **Total CVEs in KEV**: 1,477
 - **Scannable with Nuclei**: 412 (27.9%)
-- **Unscannable**: 1,063 (72.1%)
+- **Unscannable**: 1,065 (72.1%)
 - **Ransomware-Associated**: 303 (20.5%)
 - **Unique Vendors**: 242
 - **Unique Products**: 598
@@ -118,20 +119,20 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
 - 🔍 **412 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **303 CVEs** (20.5%) are known to be used in ransomware campaigns
-- 📅 **15 new CVEs** were added in the last 30 days
+- 📅 **17 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 15
+- **CVEs Added**: 17
 - **Scannable Added**: 3
-- **New Coverage**: 20.0%
+- **New Coverage**: 17.6%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
 |------|--------|-----------|-----------|-------------------|
 | 1 | Microsoft | 350 | 16 | 4.6% |
-| 2 | Apple | 85 | 0 | 0.0% |
+| 2 | Apple | 86 | 0 | 0.0% |
 | 3 | Cisco | 81 | 12 | 14.8% |
 | 4 | Adobe | 76 | 12 | 15.8% |
 | 5 | Google | 67 | 0 | 0.0% |
@@ -145,7 +146,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 159 |
-| 2 | Multiple Products | 67 |
+| 2 | Multiple Products | 68 |
 | 3 | Chromium V8 | 37 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
@@ -161,7 +162,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | 1 | CWE-20 | 112 |
 | 2 | CWE-78 | 97 |
 | 3 | CWE-787 | 95 |
-| 4 | CWE-416 | 85 |
+| 4 | CWE-416 | 86 |
 | 5 | CWE-119 | 80 |
 
 ### Ransomware-Associated CVEs
@@ -178,7 +179,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-12-15*
+*Last updated: 2025-12-16*
 
 
 ---
