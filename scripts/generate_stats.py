@@ -5,8 +5,10 @@ This script analyzes the CISA KEV database and outputs markdown stats
 """
 
 import csv
+import json
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta
+from pathlib import Path
 
 def load_kev_data():
     """Load the CISA KEV CSV file."""
@@ -18,14 +20,42 @@ def load_scannable_list():
     with open('CISA-Scannable-List.txt', 'r') as f:
         return set(line.strip() for line in f if line.strip())
 
+def load_poc_list():
+    """Load the list of CVEs with public PoCs."""
+    poc_file = Path('CISA-POC-List.txt')
+    if poc_file.exists():
+        with open(poc_file, 'r') as f:
+            return set(line.strip() for line in f if line.strip())
+    return set()
+
+def load_poc_data():
+    """Load detailed PoC data from JSON file."""
+    poc_data_file = Path('poc-data.json')
+    if poc_data_file.exists():
+        with open(poc_data_file, 'r') as f:
+            return json.load(f)
+    return {}
+
 def generate_stats():
     """Generate comprehensive statistics."""
     data = load_kev_data()
     scannable = load_scannable_list()
-    
+    poc_list = load_poc_list()
+    poc_data = load_poc_data()
+
     total_cves = len(data)
     scannable_count = len(scannable)
     coverage = (scannable_count / total_cves * 100) if total_cves > 0 else 0
+
+    # PoC statistics
+    poc_count = len(poc_list)
+    poc_coverage = (poc_count / total_cves * 100) if total_cves > 0 else 0
+
+    # CVEs with both PoC and Nuclei template
+    both_poc_and_nuclei = len(scannable & poc_list)
+
+    # CVEs with PoC but no Nuclei template (gap)
+    poc_gap = len(poc_list - scannable)
     
     # Ransomware stats
     ransomware = [cve for cve in data if cve['knownRansomwareCampaignUse'] == 'Known']
@@ -71,12 +101,15 @@ def generate_stats():
     recent_scannable = len([cve for cve in recent if cve['cveID'] in scannable])
     
     # Generate markdown
+    poc_status = f"**{poc_count:,} ({poc_coverage:.1f}%)**" if poc_count > 0 else "⏳ *Data collection pending*"
+
     stats_md = f"""
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: {total_cves:,}
 - **Scannable with Nuclei**: {scannable_count:,} ({coverage:.1f}%)
+- **With Public PoCs**: {poc_status}
 - **Unscannable**: {total_cves - scannable_count:,} ({100 - coverage:.1f}%)
 - **Ransomware-Associated**: {ransomware_count:,} ({ransomware_pct:.1f}%)
 - **Unique Vendors**: {len(vendor_counts):,}
@@ -84,7 +117,15 @@ def generate_stats():
 
 ### Key Insights
 - 🎯 **{top_vendors[0][0]}** is the most represented vendor with **{top_vendors[0][1]} CVEs**
-- 🔍 **{scannable_count:,} CVEs** can be actively scanned with Nuclei templates
+- 🔍 **{scannable_count:,} CVEs** can be actively scanned with Nuclei templates"""
+
+    if poc_count > 0:
+        stats_md += f"""
+- 💣 **{poc_count:,} CVEs** ({poc_coverage:.1f}%) have public proof-of-concept exploits available
+- 🎯 **{both_poc_and_nuclei} CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **{poc_gap} CVEs** have PoC but no Nuclei template (testing gap)"""
+
+    stats_md += f"""
 - 🦠 **{ransomware_count:,} CVEs** ({ransomware_pct:.1f}%) are known to be used in ransomware campaigns
 - 📅 **{recent_count} new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **{top_cwes[0][0]}** ({top_cwes[0][1]} occurrences)
@@ -96,15 +137,17 @@ def generate_stats():
 - **New Coverage**: {(recent_scannable / recent_count * 100) if recent_count > 0 else 0:.1f}%
 
 ### Top 10 Affected Vendors
-| Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
-|------|--------|-----------|-----------|-------------------|
+| Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
+|------|--------|-----------|-----------|----------|-------------------|
 """
-    
+
     for i, (vendor, count) in enumerate(top_vendors, 1):
         vendor_cves = [cve for cve in data if cve['vendorProject'] == vendor]
         vendor_scannable = len([cve for cve in vendor_cves if cve['cveID'] in scannable])
+        vendor_poc = len([cve for cve in vendor_cves if cve['cveID'] in poc_list]) if poc_count > 0 else 0
         vendor_coverage = (vendor_scannable / count * 100) if count > 0 else 0
-        stats_md += f"| {i} | {vendor} | {count} | {vendor_scannable} | {vendor_coverage:.1f}% |\n"
+        poc_display = str(vendor_poc) if poc_count > 0 else "-"
+        stats_md += f"| {i} | {vendor} | {count} | {vendor_scannable} | {poc_display} | {vendor_coverage:.1f}% |\n"
     
     stats_md += """
 ### Top 10 Vulnerable Products
@@ -134,10 +177,48 @@ def generate_stats():
     for vendor, count in ransomware_vendors.most_common(10):
         stats_md += f"| {vendor} | {count} |\n"
     
+    # Priority Gap Table - CVEs with PoC but no Nuclei template
+    if poc_count > 0:
+        gap_cves = poc_list - scannable
+        gap_cve_details = [cve for cve in data if cve['cveID'] in gap_cves]
+
+        # Sort by date added (most recent first)
+        gap_cve_details.sort(key=lambda x: x['dateAdded'], reverse=True)
+
+        stats_md += f"""
+### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
+
+**Total Gap CVEs:** {len(gap_cves)} vulnerabilities have public exploits but lack automated detection templates.
+
+**All {len(gap_cves)} gap CVEs** listed below (sorted by date added to KEV, most recent first):
+
+| CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
+|--------|--------|---------|------------|-----|------------|
+"""
+
+        for cve_detail in gap_cve_details:
+            cve_id = cve_detail['cveID']
+            ransomware_indicator = "🦠" if cve_detail['knownRansomwareCampaignUse'] == 'Known' else ""
+            vendor = cve_detail['vendorProject'][:25]  # Truncate long names
+            product = cve_detail['product'][:25]
+
+            # Get PoC URL from poc_data if available
+            poc_link = ""
+            if poc_data and cve_id in poc_data:
+                poc_url = poc_data[cve_id].get('poc_url', '')
+                if poc_url:
+                    poc_link = f"[PoC]({poc_url})"
+                else:
+                    poc_link = "✓"
+            else:
+                poc_link = "✓"
+
+            stats_md += f"| {cve_id} | {vendor} | {product} | {cve_detail['dateAdded']} | {poc_link} | {ransomware_indicator} |\n"
+
     stats_md += f"""
 *Last updated: {datetime.now().strftime('%Y-%m-%d')}*
 """
-    
+
     return stats_md
 
 if __name__ == '__main__':
