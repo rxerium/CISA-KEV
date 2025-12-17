@@ -36,6 +36,75 @@ def load_poc_data():
             return json.load(f)
     return {}
 
+def export_gap_csv(gap_cve_details, poc_data):
+    """Export priority gap CVEs to detailed CSV file."""
+    csv_path = Path('CISA-Priority-Gap.csv')
+
+    try:
+        with open(csv_path, 'w', newline='', encoding='utf-8') as f:
+            fieldnames = [
+                'cveID',
+                'vendorProject',
+                'product',
+                'vulnerabilityName',
+                'dateAdded',
+                'shortDescription',
+                'requiredAction',
+                'dueDate',
+                'knownRansomwareCampaignUse',
+                'notes',
+                'cwes',
+                'poc_url',
+                'poc_count',
+                'epss_score',
+                'epss_percentile',
+                'cvss_score',
+                'severity',
+                'is_remote',
+                'is_auth',
+                'vulnerability_type'
+            ]
+
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for cve_detail in gap_cve_details:
+                cve_id = cve_detail['cveID']
+
+                # Get PoC data if available
+                poc_info = poc_data.get(cve_id, {}) if poc_data else {}
+
+                # Build row with all available data
+                row = {
+                    'cveID': cve_id,
+                    'vendorProject': cve_detail['vendorProject'],
+                    'product': cve_detail['product'],
+                    'vulnerabilityName': cve_detail['vulnerabilityName'],
+                    'dateAdded': cve_detail['dateAdded'],
+                    'shortDescription': cve_detail['shortDescription'],
+                    'requiredAction': cve_detail['requiredAction'],
+                    'dueDate': cve_detail['dueDate'],
+                    'knownRansomwareCampaignUse': cve_detail['knownRansomwareCampaignUse'],
+                    'notes': cve_detail.get('notes', ''),
+                    'cwes': cve_detail.get('cwes', ''),
+                    'poc_url': poc_info.get('poc_url', ''),
+                    'poc_count': poc_info.get('poc_count', ''),
+                    'epss_score': poc_info.get('epss_score', ''),
+                    'epss_percentile': poc_info.get('epss_percentile', ''),
+                    'cvss_score': poc_info.get('cvss_score', ''),
+                    'severity': poc_info.get('severity', ''),
+                    'is_remote': poc_info.get('is_remote', ''),
+                    'is_auth': poc_info.get('is_auth', ''),
+                    'vulnerability_type': poc_info.get('vulnerability_type', '')
+                }
+
+                writer.writerow(row)
+
+        print(f"✅ Exported {len(gap_cve_details)} priority gap CVEs to {csv_path}", flush=True)
+
+    except Exception as e:
+        print(f"❌ Error exporting gap CSV: {e}", flush=True)
+
 def generate_stats():
     """Generate comprehensive statistics."""
     data = load_kev_data()
@@ -185,10 +254,15 @@ def generate_stats():
         # Sort by date added (most recent first)
         gap_cve_details.sort(key=lambda x: x['dateAdded'], reverse=True)
 
+        # Export detailed CSV
+        export_gap_csv(gap_cve_details, poc_data)
+
         stats_md += f"""
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
 **Total Gap CVEs:** {len(gap_cves)} vulnerabilities have public exploits but lack automated detection templates.
+
+📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
 **All {len(gap_cves)} gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
