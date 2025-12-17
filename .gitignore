@@ -37,4 +37,14 @@ outputs/data/*.json
 
 # Temporary files
 *.tmp
-*.log
+
+# Logs
+logs/*.log
+logs/poc-checkpoint.json
+
+# Archive (test files)
+archive/*
+
+# Keep empty directories
+!logs/.gitkeep
+!archive/.gitkeep

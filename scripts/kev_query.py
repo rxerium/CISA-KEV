@@ -12,7 +12,7 @@ import argparse
 from collections import defaultdict
 from pathlib import Path
 
-def load_kev_data(csv_path='cisa-kev.csv'):
+def load_kev_data(csv_path='data/raw/cisa-kev.csv'):
     """Load the CISA KEV CSV file."""
     try:
         with open(csv_path, 'r', encoding='utf-8') as f:
@@ -22,7 +22,7 @@ def load_kev_data(csv_path='cisa-kev.csv'):
         print(f"❌ Error loading CSV: {e}")
         return []
 
-def load_scannable_list(txt_path='CISA-Scannable-List.txt'):
+def load_scannable_list(txt_path='data/lists/CISA-Scannable-List.txt'):
     """Load the list of scannable CVEs."""
     try:
         with open(txt_path, 'r') as f:
@@ -31,7 +31,7 @@ def load_scannable_list(txt_path='CISA-Scannable-List.txt'):
         print(f"❌ Error loading scannable list: {e}")
         return set()
 
-def load_poc_list(txt_path='CISA-POC-List.txt'):
+def load_poc_list(txt_path='data/lists/CISA-POC-List.txt'):
     """Load the list of CVEs with public PoCs."""
     try:
         poc_file = Path(txt_path)
@@ -241,7 +241,7 @@ Icon Legend:
     parser.add_argument('--poc-gap', '-G', action='store_true', help='Show CVEs with PoC but no Nuclei template (testing gap)')
     parser.add_argument('--stats', '-S', action='store_true', help='Show overall statistics')
     parser.add_argument('--details', '-d', action='store_true', help='Show detailed information')
-    parser.add_argument('--csv', default='cisa-kev.csv', help='Path to KEV CSV file (default: cisa-kev.csv)')
+    parser.add_argument('--csv', default='data/raw/cisa-kev.csv', help='Path to KEV CSV file (default: cisa-kev.csv)')
 
     args = parser.parse_args()
 

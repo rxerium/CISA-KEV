@@ -18,7 +18,7 @@ PDCP_API_BASE = "https://api.projectdiscovery.io/v2/vulnerability"
 REQUEST_TIMEOUT = 10
 RATE_LIMIT_DELAY = 0.5  # Delay between requests to avoid rate limiting
 
-def load_kev_cves(csv_path='cisa-kev.csv'):
+def load_kev_cves(csv_path='data/raw/cisa-kev.csv'):
     """Load CVE IDs from CISA KEV CSV."""
     cves = []
     try:
@@ -99,7 +99,7 @@ def fetch_poc_info(cve_id):
             'error': str(e)
         }
 
-def fetch_all_poc_data(cves, output_file='poc-data.json', checkpoint_file='poc-checkpoint.json'):
+def fetch_all_poc_data(cves, output_file='data/raw/poc-data.json', checkpoint_file='logs/poc-checkpoint.json'):
     """
     Fetch PoC data for all CVEs with progress tracking and checkpointing.
     """
@@ -181,7 +181,7 @@ def fetch_all_poc_data(cves, output_file='poc-data.json', checkpoint_file='poc-c
 
     return results
 
-def generate_poc_list(poc_data, output_file='CISA-POC-List.txt'):
+def generate_poc_list(poc_data, output_file='data/lists/CISA-POC-List.txt'):
     """
     Generate a text file listing CVEs that have public PoCs available.
     Similar format to CISA-Scannable-List.txt

@@ -12,17 +12,17 @@ from pathlib import Path
 
 def load_kev_data():
     """Load the CISA KEV CSV file."""
-    with open('cisa-kev.csv', 'r', encoding='utf-8') as f:
+    with open('data/raw/cisa-kev.csv', 'r', encoding='utf-8') as f:
         return list(csv.DictReader(f))
 
 def load_scannable_list():
     """Load the list of scannable CVEs."""
-    with open('CISA-Scannable-List.txt', 'r') as f:
+    with open('data/lists/CISA-Scannable-List.txt', 'r') as f:
         return set(line.strip() for line in f if line.strip())
 
 def load_poc_list():
     """Load the list of CVEs with public PoCs."""
-    poc_file = Path('CISA-POC-List.txt')
+    poc_file = Path('data/lists/CISA-POC-List.txt')
     if poc_file.exists():
         with open(poc_file, 'r') as f:
             return set(line.strip() for line in f if line.strip())
@@ -30,7 +30,7 @@ def load_poc_list():
 
 def load_poc_data():
     """Load detailed PoC data from JSON file."""
-    poc_data_file = Path('poc-data.json')
+    poc_data_file = Path('data/raw/poc-data.json')
     if poc_data_file.exists():
         with open(poc_data_file, 'r') as f:
             return json.load(f)
@@ -38,7 +38,7 @@ def load_poc_data():
 
 def export_gap_csv(gap_cve_details, poc_data):
     """Export priority gap CVEs to detailed CSV file."""
-    csv_path = Path('CISA-Priority-Gap.csv')
+    csv_path = Path('data/processed/CISA-Priority-Gap.csv')
 
     try:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:

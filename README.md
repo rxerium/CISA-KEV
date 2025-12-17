@@ -109,7 +109,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
-✅ Exported 597 priority gap CVEs to CISA-Priority-Gap.csv
+✅ Exported 597 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
 ## 📊 Database Statistics
 
@@ -193,7 +193,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 **Total Gap CVEs:** 597 vulnerabilities have public exploits but lack automated detection templates.
 
-📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
+📥 **Download Full Data:** [data/processed/CISA-Priority-Gap.csv](data/processed/CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
 **All 597 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
