@@ -1,0 +1,72 @@
+{
+  "CVE-2025-59718": {
+    "cve_id": "CVE-2025-59718",
+    "is_poc": true,
+    "poc_count": 2,
+    "epss_score": 0.00049,
+    "status": "success"
+  },
+  "CVE-2025-14611": {
+    "cve_id": "CVE-2025-14611",
+    "is_poc": true,
+    "poc_count": 1,
+    "epss_score": 0.1748,
+    "status": "success"
+  },
+  "CVE-2025-43529": {
+    "cve_id": "CVE-2025-43529",
+    "is_poc": false,
+    "poc_count": 0,
+    "epss_score": 0.0,
+    "status": "success"
+  },
+  "CVE-2018-4063": {
+    "cve_id": "CVE-2018-4063",
+    "is_poc": true,
+    "poc_count": 3,
+    "epss_score": 0.01708,
+    "status": "success"
+  },
+  "CVE-2025-14174": {
+    "cve_id": "CVE-2025-14174",
+    "is_poc": true,
+    "poc_count": 1,
+    "epss_score": 0.01081,
+    "status": "success"
+  },
+  "CVE-2025-58360": {
+    "cve_id": "CVE-2025-58360",
+    "is_poc": true,
+    "poc_count": 8,
+    "epss_score": 0.71917,
+    "status": "success"
+  },
+  "CVE-2025-6218": {
+    "cve_id": "CVE-2025-6218",
+    "is_poc": true,
+    "poc_count": 16,
+    "epss_score": 0.07167,
+    "status": "success"
+  },
+  "CVE-2025-62221": {
+    "cve_id": "CVE-2025-62221",
+    "is_poc": true,
+    "poc_count": 2,
+    "epss_score": 0.02903,
+    "status": "success"
+  },
+  "CVE-2022-37055": {
+    "cve_id": "CVE-2022-37055",
+    "is_poc": true,
+    "poc_count": 1,
+    "epss_score": 0.73907,
+    "status": "success"
+  },
+  "CVE-2025-66644": {
+    "cve_id": "CVE-2025-66644",
+    "is_poc": true,
+    "poc_count": 1,
+    "epss_score": 0.03506,
+    "status": "success"
+  }
+}
