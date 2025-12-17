@@ -24,7 +24,7 @@ from pathlib import Path
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (14, 10)
 
-def load_kev_data(csv_path='cisa-kev.csv'):
+def load_kev_data(csv_path='data/raw/cisa-kev.csv'):
     """Load the CISA KEV CSV file."""
     try:
         df = pd.read_csv(csv_path)
@@ -35,7 +35,7 @@ def load_kev_data(csv_path='cisa-kev.csv'):
         print(f"❌ Error loading CSV: {e}")
         return None
 
-def load_scannable_list(txt_path='CISA-Scannable-List.txt'):
+def load_scannable_list(txt_path='data/lists/CISA-Scannable-List.txt'):
     """Load the list of scannable CVEs."""
     try:
         with open(txt_path, 'r') as f:
@@ -46,7 +46,7 @@ def load_scannable_list(txt_path='CISA-Scannable-List.txt'):
         print(f"❌ Error loading scannable list: {e}")
         return set()
 
-def load_poc_list(txt_path='CISA-POC-List.txt'):
+def load_poc_list(txt_path='data/lists/CISA-POC-List.txt'):
     """Load the list of CVEs with public PoCs."""
     try:
         poc_file = Path(txt_path)
@@ -62,7 +62,7 @@ def load_poc_list(txt_path='CISA-POC-List.txt'):
         print(f"❌ Error loading PoC list: {e}")
         return set()
 
-def load_poc_data(json_path='poc-data.json'):
+def load_poc_data(json_path='data/raw/poc-data.json'):
     """Load detailed PoC data from JSON file."""
     try:
         poc_data_file = Path(json_path)
