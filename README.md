@@ -106,12 +106,13 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 
 
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,477
+- **Total CVEs in KEV**: 1,478
 - **Scannable with Nuclei**: 412 (27.9%)
-- **Unscannable**: 1,065 (72.1%)
+- **Unscannable**: 1,066 (72.1%)
 - **Ransomware-Associated**: 303 (20.5%)
 - **Unique Vendors**: 242
 - **Unique Products**: 598
@@ -120,14 +121,14 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
 - 🔍 **412 CVEs** can be actively scanned with Nuclei templates
 - 🦠 **303 CVEs** (20.5%) are known to be used in ransomware campaigns
-- 📅 **17 new CVEs** were added in the last 30 days
+- 📅 **18 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 17
+- **CVEs Added**: 18
 - **Scannable Added**: 3
-- **New Coverage**: 17.6%
+- **New Coverage**: 16.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | Scanning Coverage |
@@ -147,7 +148,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 159 |
-| 2 | Multiple Products | 68 |
+| 2 | Multiple Products | 69 |
 | 3 | Chromium V8 | 37 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
@@ -180,7 +181,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Atlassian | 8 |
 | Citrix | 7 |
 
-*Last updated: 2025-12-16*
+*Last updated: 2025-12-17*
 
 
 ---
