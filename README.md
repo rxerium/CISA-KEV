@@ -54,6 +54,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 597 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 597 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
