@@ -52,39 +52,41 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 597 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 597 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,478
-- **Scannable with Nuclei**: 412 (27.9%)
-- **With Public PoCs**: **985 (66.6%)**
-- **Unscannable**: 1,066 (72.1%)
+- **Total CVEs in KEV**: 1,481
+- **Scannable with Nuclei**: 412 (27.8%)
+- **With Public PoCs**: **985 (66.5%)**
+- **Unscannable**: 1,069 (72.2%)
 - **Ransomware-Associated**: 303 (20.5%)
 - **Unique Vendors**: 242
-- **Unique Products**: 598
+- **Unique Products**: 600
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
 - 🔍 **412 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (66.6%) have public proof-of-concept exploits available
+- 💣 **985 CVEs** (66.5%) have public proof-of-concept exploits available
 - 🎯 **388 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **597 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **303 CVEs** (20.5%) are known to be used in ransomware campaigns
-- 📅 **18 new CVEs** were added in the last 30 days
-- 🔒 Most common vulnerability type: **CWE-20** (112 occurrences)
+- 📅 **20 new CVEs** were added in the last 30 days
+- 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 18
+- **CVEs Added**: 20
 - **Scannable Added**: 3
-- **New Coverage**: 16.7%
+- **New Coverage**: 15.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
 | 1 | Microsoft | 350 | 16 | 218 | 4.6% |
 | 2 | Apple | 86 | 0 | 30 | 0.0% |
-| 3 | Cisco | 81 | 12 | 24 | 14.8% |
+| 3 | Cisco | 82 | 12 | 24 | 14.6% |
 | 4 | Adobe | 76 | 12 | 44 | 15.8% |
 | 5 | Google | 67 | 0 | 48 | 0.0% |
 | 6 | Oracle | 42 | 18 | 33 | 42.9% |
@@ -97,7 +99,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 159 |
-| 2 | Multiple Products | 69 |
+| 2 | Multiple Products | 70 |
 | 3 | Chromium V8 | 37 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
@@ -110,7 +112,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 ### Top 5 Vulnerability Types (CWEs)
 | Rank | CWE | Count |
 |------|-----|-------|
-| 1 | CWE-20 | 112 |
+| 1 | CWE-20 | 113 |
 | 2 | CWE-78 | 97 |
 | 3 | CWE-787 | 95 |
 | 4 | CWE-416 | 86 |
@@ -738,7 +740,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2025-12-17*
+*Last updated: 2025-12-18*
 
 
 ---
