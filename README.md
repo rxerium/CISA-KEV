@@ -62,23 +62,25 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 596 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 595 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,482
-- **Scannable with Nuclei**: 413 (27.9%)
+- **Scannable with Nuclei**: 414 (27.9%)
 - **With Public PoCs**: **985 (66.5%)**
-- **Unscannable**: 1,069 (72.1%)
+- **Unscannable**: 1,068 (72.1%)
 - **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 242
 - **Unique Products**: 600
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
-- 🔍 **413 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **414 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (66.5%) have public proof-of-concept exploits available
-- 🎯 **389 CVEs** have both PoC and Nuclei template (fully testable)
-- 🔓 **596 CVEs** have PoC but no Nuclei template (testing gap)
+- 🎯 **390 CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **595 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
 - 📅 **19 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
@@ -142,11 +144,11 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
-**Total Gap CVEs:** 596 vulnerabilities have public exploits but lack automated detection templates.
+**Total Gap CVEs:** 595 vulnerabilities have public exploits but lack automated detection templates.
 
 📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
-**All 596 gap CVEs** listed below (sorted by date added to KEV, most recent first):
+**All 595 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
 | CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
 |--------|--------|---------|------------|-----|------------|
@@ -651,7 +653,6 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2019-15752 | Docker | Desktop Community Edition | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/157404/Docker-Credential-Wincred.exe-Privilege-Escalation.html) |  |
 | CVE-2018-6789 | Exim | Exim | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/162959/Exim-base64d-Buffer-Overflow.html) | 🦠 |
 | CVE-2020-8655 | EyesOfNetwork | EyesOfNetwork | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156266/EyesOfNetwork-5.3-Remote-Code-Execution.html) |  |
-| CVE-2019-5591 | Fortinet | FortiOS | 2021-11-03 | [PoC](https://github.com/ayewo/fortios-ldap-mitm-poc-CVE-2019-5591) |  |
 | CVE-2020-15999 | Google | Chrome FreeType | 2021-11-03 | [PoC](https://crbug.com/1139963) |  |
 | CVE-2021-37976 | Google | Chromium | 2021-11-03 | [PoC](https://crbug.com/1251787) |  |
 | CVE-2020-16009 | Google | Chromium V8 | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/159974/Chrome-V8-Turbofan-Type-Confusion.html) |  |
