@@ -60,14 +60,16 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 596 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 596 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,481
+- **Total CVEs in KEV**: 1,482
 - **Scannable with Nuclei**: 413 (27.9%)
 - **With Public PoCs**: **985 (66.5%)**
-- **Unscannable**: 1,068 (72.1%)
-- **Ransomware-Associated**: 303 (20.5%)
+- **Unscannable**: 1,069 (72.1%)
+- **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 242
 - **Unique Products**: 600
 
@@ -77,15 +79,15 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 - 💣 **985 CVEs** (66.5%) have public proof-of-concept exploits available
 - 🎯 **389 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **596 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **303 CVEs** (20.5%) are known to be used in ransomware campaigns
+- 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
 - 📅 **19 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 19
-- **Scannable Added**: 4
-- **New Coverage**: 21.1%
+- **Scannable Added**: 3
+- **New Coverage**: 15.8%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -120,7 +122,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 |------|-----|-------|
 | 1 | CWE-20 | 113 |
 | 2 | CWE-78 | 97 |
-| 3 | CWE-787 | 95 |
+| 3 | CWE-787 | 96 |
 | 4 | CWE-416 | 86 |
 | 5 | CWE-119 | 80 |
 
@@ -131,8 +133,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | Fortinet | 13 |
 | Ivanti | 12 |
 | Oracle | 11 |
+| SonicWall | 10 |
 | Adobe | 10 |
-| SonicWall | 9 |
 | QNAP | 9 |
 | VMware | 8 |
 | Atlassian | 8 |
@@ -745,7 +747,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2025-12-19*
+*Last updated: 2025-12-22*
 
 
 ---
