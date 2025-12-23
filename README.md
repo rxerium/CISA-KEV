@@ -64,32 +64,34 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 595 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 595 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,482
+- **Total CVEs in KEV**: 1,483
 - **Scannable with Nuclei**: 414 (27.9%)
-- **With Public PoCs**: **985 (66.5%)**
-- **Unscannable**: 1,068 (72.1%)
+- **With Public PoCs**: **985 (66.4%)**
+- **Unscannable**: 1,069 (72.1%)
 - **Ransomware-Associated**: 304 (20.5%)
-- **Unique Vendors**: 242
-- **Unique Products**: 600
+- **Unique Vendors**: 243
+- **Unique Products**: 601
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
 - 🔍 **414 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (66.5%) have public proof-of-concept exploits available
+- 💣 **985 CVEs** (66.4%) have public proof-of-concept exploits available
 - 🎯 **390 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **595 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
-- 📅 **19 new CVEs** were added in the last 30 days
+- 📅 **20 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 19
+- **CVEs Added**: 20
 - **Scannable Added**: 3
-- **New Coverage**: 15.8%
+- **New Coverage**: 15.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -748,7 +750,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2025-12-22*
+*Last updated: 2025-12-23*
 
 
 ---
