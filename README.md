@@ -70,23 +70,25 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 595 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 594 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,483
-- **Scannable with Nuclei**: 414 (27.9%)
+- **Scannable with Nuclei**: 415 (28.0%)
 - **With Public PoCs**: **985 (66.4%)**
-- **Unscannable**: 1,069 (72.1%)
+- **Unscannable**: 1,068 (72.0%)
 - **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 243
 - **Unique Products**: 601
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
-- 🔍 **414 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **415 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (66.4%) have public proof-of-concept exploits available
-- 🎯 **390 CVEs** have both PoC and Nuclei template (fully testable)
-- 🔓 **595 CVEs** have PoC but no Nuclei template (testing gap)
+- 🎯 **391 CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **594 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
 - 📅 **20 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
@@ -150,11 +152,11 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
-**Total Gap CVEs:** 595 vulnerabilities have public exploits but lack automated detection templates.
+**Total Gap CVEs:** 594 vulnerabilities have public exploits but lack automated detection templates.
 
 📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
-**All 595 gap CVEs** listed below (sorted by date added to KEV, most recent first):
+**All 594 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
 | CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
 |--------|--------|---------|------------|-----|------------|
@@ -748,7 +750,6 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2019-18988 | TeamViewer | Desktop | 2021-11-03 | [PoC](https://whynotsecurity.com/blog/teamviewer/) |  |
 | CVE-2017-9248 | Progress | ASP.NET AJAX and Sitefini | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/43873/) |  |
 | CVE-2018-14558 | Tenda | AC7, AC9, and AC10 Router | 2021-11-03 | [PoC](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-01/Tenda.md) |  |
-| CVE-2019-9082 | ThinkPHP | ThinkPHP | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/157218/ThinkPHP-5.0.23-Remote-Code-Execution.html) |  |
 | CVE-2020-5849 | Unraid | Unraid | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/157275/Unraid-6.8.0-Authentication-Bypass-Arbitrary-Code-Execution.html) |  |
 | CVE-2020-3992 | VMware | ESXi | 2021-11-03 | [PoC](https///github.com:ceciliaaii/CVE_2020_3992.git) | 🦠 |
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
