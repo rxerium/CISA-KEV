@@ -88,20 +88,22 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 594 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 594 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,484
-- **Scannable with Nuclei**: 416 (28.0%)
+- **Scannable with Nuclei**: 417 (28.1%)
 - **With Public PoCs**: **985 (66.4%)**
-- **Unscannable**: 1,068 (72.0%)
+- **Unscannable**: 1,067 (71.9%)
 - **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 243
 - **Unique Products**: 602
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
-- 🔍 **416 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **417 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (66.4%) have public proof-of-concept exploits available
 - 🎯 **391 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **594 CVEs** have PoC but no Nuclei template (testing gap)
@@ -771,7 +773,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2025-12-30*
+*Last updated: 2025-12-31*
 
 
 ---
