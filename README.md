@@ -106,23 +106,25 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 594 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 593 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,484
-- **Scannable with Nuclei**: 417 (28.1%)
+- **Scannable with Nuclei**: 419 (28.2%)
 - **With Public PoCs**: **985 (66.4%)**
-- **Unscannable**: 1,067 (71.9%)
+- **Unscannable**: 1,065 (71.8%)
 - **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 243
 - **Unique Products**: 602
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
-- 🔍 **417 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **419 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (66.4%) have public proof-of-concept exploits available
-- 🎯 **391 CVEs** have both PoC and Nuclei template (fully testable)
-- 🔓 **594 CVEs** have PoC but no Nuclei template (testing gap)
+- 🎯 **392 CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **593 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
 - 📅 **16 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
@@ -144,7 +146,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | 6 | Oracle | 42 | 18 | 33 | 42.9% |
 | 7 | Apache | 38 | 35 | 38 | 92.1% |
 | 8 | Ivanti | 30 | 18 | 23 | 60.0% |
-| 9 | VMware | 26 | 12 | 18 | 46.2% |
+| 9 | VMware | 26 | 13 | 18 | 50.0% |
 | 10 | D-Link | 25 | 10 | 24 | 40.0% |
 
 ### Top 10 Vulnerable Products
@@ -186,11 +188,11 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
-**Total Gap CVEs:** 594 vulnerabilities have public exploits but lack automated detection templates.
+**Total Gap CVEs:** 593 vulnerabilities have public exploits but lack automated detection templates.
 
 📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
-**All 594 gap CVEs** listed below (sorted by date added to KEV, most recent first):
+**All 593 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
 | CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
 |--------|--------|---------|------------|-----|------------|
@@ -559,7 +561,6 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2019-11043 | PHP | FastCGI Process Manager ( | 2022-03-25 | [PoC](https://github.com/neex/phuip-fpizdam) | 🦠 |
 | CVE-2019-1003030 | Jenkins | Matrix Project Plugin | 2022-03-25 | [PoC](http://packetstormsecurity.com/files/159603/Jenkins-2.63-Sandbox-Bypass.html) |  |
 | CVE-2018-8414 | Microsoft | Windows | 2022-03-25 | [PoC](https///github.com:whereisr0da/CVE-2018-8414-POC.git) |  |
-| CVE-2018-6961 | VMware | SD-WAN Edge | 2022-03-25 | [PoC](https://www.exploit-db.com/exploits/44959/) |  |
 | CVE-2018-14839 | LG | N1A1 NAS | 2022-03-25 | [PoC](https://medium.com/%400x616163/lg-n1a1-unauthenticated-remote-command-injection-cve-2018-14839-9d2cf760e247) |  |
 | CVE-2017-6334 | NETGEAR | DGN2200 Devices | 2022-03-25 | [PoC](https://www.exploit-db.com/exploits/41459/) |  |
 | CVE-2017-6316 | Citrix | NetScaler SD-WAN Enterpri | 2022-03-25 | [PoC](https://www.exploit-db.com/exploits/42345/) |  |
