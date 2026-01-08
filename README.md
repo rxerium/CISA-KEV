@@ -112,21 +112,23 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 593 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 593 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,484
-- **Scannable with Nuclei**: 419 (28.2%)
-- **With Public PoCs**: **985 (66.4%)**
-- **Unscannable**: 1,065 (71.8%)
+- **Total CVEs in KEV**: 1,486
+- **Scannable with Nuclei**: 420 (28.3%)
+- **With Public PoCs**: **985 (66.3%)**
+- **Unscannable**: 1,066 (71.7%)
 - **Ransomware-Associated**: 304 (20.5%)
 - **Unique Vendors**: 243
-- **Unique Products**: 602
+- **Unique Products**: 603
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **350 CVEs**
-- 🔍 **419 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (66.4%) have public proof-of-concept exploits available
+- 🎯 **Microsoft** is the most represented vendor with **351 CVEs**
+- 🔍 **420 CVEs** can be actively scanned with Nuclei templates
+- 💣 **985 CVEs** (66.3%) have public proof-of-concept exploits available
 - 🎯 **392 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **593 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **304 CVEs** (20.5%) are known to be used in ransomware campaigns
@@ -136,13 +138,13 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 14
-- **Scannable Added**: 3
-- **New Coverage**: 21.4%
+- **Scannable Added**: 4
+- **New Coverage**: 28.6%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
-| 1 | Microsoft | 350 | 16 | 218 | 4.6% |
+| 1 | Microsoft | 351 | 16 | 218 | 4.6% |
 | 2 | Apple | 86 | 0 | 30 | 0.0% |
 | 3 | Cisco | 82 | 12 | 24 | 14.6% |
 | 4 | Adobe | 76 | 12 | 44 | 15.8% |
@@ -161,8 +163,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | 3 | Chromium V8 | 37 |
 | 4 | Internet Explorer | 34 |
 | 5 | Flash Player | 33 |
-| 6 | Kernel | 26 |
-| 7 | Office | 25 |
+| 6 | Office | 26 |
+| 7 | Kernel | 26 |
 | 8 | Win32k | 25 |
 | 9 | Exchange Server | 16 |
 | 10 | ColdFusion | 15 |
@@ -794,7 +796,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-01-07*
+*Last updated: 2026-01-08*
 
 
 ---
