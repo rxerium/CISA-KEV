@@ -116,6 +116,8 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 
 ✅ Exported 593 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 593 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -798,7 +800,7 @@ A repository that automatically tracks and cross-references CISA's Known Exploit
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-01-08*
+*Last updated: 2026-01-09*
 
 
 ---
