@@ -58,7 +58,8 @@ archive/*
 vulncheck_key*.txt
 .secrets/
 
-# Allow VulnCheck data files
+# Allow VulnCheck data files (but exclude large raw data files)
 !data/lists/VulnCheck*.txt
-!data/raw/vulncheck*.json
-!data/raw/vulncheck*.csv
+!data/raw/vulncheck-stats.json
+data/raw/vulncheck-kev.json
+data/raw/vulncheck-kev.csv
