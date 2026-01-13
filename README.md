@@ -6,11 +6,59 @@
 
 ## Executive Summary
 
-This repository provides automated tracking and analysis of CISA's Known Exploitable Vulnerabilities (KEV) catalog, cross-referenced with Nuclei security templates and public proof-of-concept exploits. With 1,487 tracked CVEs, the data reveals critical security gaps: while 66.2% have public exploits available, only 28.3% can be scanned with automated tools. The repository identifies 593 high-priority vulnerabilities that have working exploits but lack detection templates, representing a significant testing gap. Microsoft leads with 351 CVEs, while Apache demonstrates the highest scanning coverage at 92.1%. Automated daily updates ensure fresh intelligence for vulnerability prioritization and security testing.
+This repository provides automated tracking and analysis of both **CISA's KEV** and **VulnCheck KEV** catalogs, cross-referenced with Nuclei security templates and public proof-of-concept exploits. By integrating VulnCheck KEV, coverage expands from 1,487 to **4,466 total unique CVEs** - a **3x increase**. The combined dataset reveals that 35.3% of all KEV vulnerabilities can be actively scanned with Nuclei templates (1,578 CVEs). VulnCheck's extended coverage adds **2,979 additional vulnerabilities** not found in CISA's official list, providing comprehensive visibility into exploited vulnerabilities. With automated daily updates and dual-source intelligence, this repository delivers the most complete KEV tracking available.
 
-**Quick Stats:** 1,487 CVEs tracked | 421 scannable | 985 with public PoCs | 593 priority gap | 304 ransomware-associated
+**Quick Stats (Combined):** 4,466 total CVEs | 1,578 scannable with Nuclei | 2,979 VulnCheck-exclusive | 1,487 in both sources
 
-## 📊 Database Statistics
+## 🔀 KEV Source Comparison: CISA vs VulnCheck
+
+### Overview
+This repository tracks vulnerabilities from **two authoritative KEV sources**:
+
+| Metric | CISA KEV | VulnCheck KEV | Combined/Comparison |
+|--------|----------|---------------|---------------------|
+| **Total CVEs** | 1,487 | 4,466 | 4,466 unique |
+| **Scannable with Nuclei** | 421 (28.3%) | 1,578 (35.3%) | 1,578 (35.3%) |
+| **Overlap** | - | - | 1,487 (100% of CISA) |
+| **Source-Exclusive CVEs** | 0 | 2,979 | - |
+| **Coverage Increase** | - | - | **+200% more CVEs** |
+
+### Key Insights
+- ✅ **All CISA KEV vulnerabilities are included in VulnCheck KEV**
+- 🚀 **VulnCheck provides 3x more vulnerability coverage** (2,979 additional CVEs)
+- 🔍 **1,578 CVEs can be actively scanned** with Nuclei templates (35.3% coverage)
+- 📈 **+1,157 additional scannable CVEs** from VulnCheck vs CISA alone
+- 🎯 VulnCheck's extended dataset captures vulnerabilities exploited in the wild but not yet on CISA's official list
+
+### Source Characteristics
+
+**CISA KEV (Official U.S. Government List)**
+- Authoritative U.S. federal agency catalog
+- Focus on vulnerabilities actively exploited against federal systems
+- Required remediation for U.S. federal agencies (BOD 22-01)
+- Updated regularly with careful vetting process
+- 1,487 CVEs with mandatory remediation deadlines
+
+**VulnCheck KEV (Extended Commercial Intelligence)**
+- Comprehensive threat intelligence aggregation
+- Includes CISA KEV plus additional exploitation evidence
+- Broader international exploitation tracking
+- Community and research-driven vulnerability additions
+- 4,466 CVEs with verified exploitation evidence
+
+### Nuclei Template Coverage by Source
+
+| Source | Total CVEs | Scannable | Coverage % | Unscannable |
+|--------|-----------|-----------|------------|-------------|
+| **CISA KEV** | 1,487 | 421 | 28.3% | 1,066 |
+| **VulnCheck KEV** | 4,466 | 1,578 | 35.3% | 2,888 |
+| **VulnCheck-Exclusive** | 2,979 | 1,157 | 38.8% | 1,822 |
+
+**Insight:** VulnCheck-exclusive CVEs have a higher Nuclei coverage rate (38.8%) compared to the overall dataset, suggesting strong community security tool support for these additional vulnerabilities.
+
+---
+
+## 📊 CISA KEV Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,487
@@ -125,5 +173,53 @@ Or query using: `python scripts/kev_query.py --poc-gap`
 
 *Last updated: 2026-01-13*
 
+---
+
+## 🔧 Using VulnCheck KEV Integration
+
+### Setup
+1. Get a free VulnCheck API key from [vulncheck.com](https://vulncheck.com)
+2. Set the environment variable:
+   ```bash
+   export VULNCHECK_API_KEY="your_api_key_here"
+   ```
+
+### Manual Usage
+```bash
+# Fetch VulnCheck KEV data
+make vulncheck-fetch
+
+# Match with Nuclei templates
+make vulncheck-match
+
+# Compare CISA vs VulnCheck
+make compare-kevs
+
+# Run everything
+make vulncheck-all
+```
+
+### Automated Updates
+The GitHub Actions workflow automatically:
+- **Weekly (Sundays 3 AM UTC)**: Fetches VulnCheck KEV data
+- Matches VulnCheck CVEs against Nuclei templates
+- Generates comparison analysis between CISA and VulnCheck
+- Updates README with latest statistics
+
+### Generated Files
+```
+data/
+├── raw/
+│   ├── vulncheck-kev.json          # Raw VulnCheck data
+│   └── vulncheck-kev.csv           # Normalized CSV format
+├── lists/
+│   ├── VulnCheck-KEV-List.txt      # All VulnCheck CVEs
+│   ├── VulnCheck-Scannable-List.txt # Nuclei-scannable VulnCheck CVEs
+│   ├── Common-CVEs.txt             # CVEs in both CISA & VulnCheck
+│   ├── CISA-Only-CVEs.txt          # CISA-exclusive CVEs
+│   └── VulnCheck-Only-CVEs.txt     # VulnCheck-exclusive CVEs (2,979)
+└── processed/
+    └── kev-comparison.json         # Detailed comparison analytics
+```
 
 ---

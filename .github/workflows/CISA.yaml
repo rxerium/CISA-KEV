@@ -39,6 +39,30 @@ jobs:
       run: |
            grep -wof data/lists/NucleiList.txt data/raw/cisa-kev.csv | sort | uniq > data/lists/CISA-Scannable-List.txt
 
+    - name: Fetch VulnCheck KEV data
+      # Only run VulnCheck fetch weekly or on manual trigger
+      if: github.event.schedule == '0 3 * * 0' || github.event_name == 'workflow_dispatch'
+      env:
+        VULNCHECK_API_KEY: ${{ secrets.VULNCHECK_API_KEY }}
+      run: |
+           echo "🔍 Fetching VulnCheck KEV data (weekly update)..."
+           python scripts/fetch_vulncheck_kev.py || echo "⚠️  VulnCheck fetch failed, continuing without VulnCheck data"
+
+    - name: Match VulnCheck CVEs with Nuclei templates
+      if: github.event.schedule == '0 3 * * 0' || github.event_name == 'workflow_dispatch'
+      run: |
+           if [ -f data/lists/VulnCheck-KEV-List.txt ]; then
+             grep -wof data/lists/NucleiList.txt data/lists/VulnCheck-KEV-List.txt | sort | uniq > data/lists/VulnCheck-Scannable-List.txt || true
+             echo "✅ Matched $(wc -l < data/lists/VulnCheck-Scannable-List.txt) VulnCheck CVEs with Nuclei templates"
+           fi
+
+    - name: Compare CISA and VulnCheck KEV sources
+      if: github.event.schedule == '0 3 * * 0' || github.event_name == 'workflow_dispatch'
+      run: |
+           if [ -f data/lists/VulnCheck-KEV-List.txt ]; then
+             python scripts/compare_kev_sources.py || echo "⚠️  Comparison failed"
+           fi
+
 
     - name: Fetch PoC data from ProjectDiscovery API
       # Only run PoC collection on Sundays (weekly update)

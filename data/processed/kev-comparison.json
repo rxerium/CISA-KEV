@@ -1,0 +1,12 @@
+{
+  "cisa_total": 1487,
+  "vulncheck_total": 4466,
+  "overlap": 1487,
+  "cisa_exclusive": 0,
+  "vulncheck_exclusive": 2979,
+  "total_unique": 4466,
+  "nuclei_coverage_cisa": 419,
+  "nuclei_coverage_vc": 1578,
+  "nuclei_coverage_total": 1578,
+  "overlap_percentage": 100.0
+}

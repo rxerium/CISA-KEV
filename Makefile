@@ -81,6 +81,24 @@ quick-start: setup all ## Quick start: setup + generate all visualizations
 	@echo "Check out the generated PNG files!"
 
 # Examples
+vulncheck-fetch: ## Fetch VulnCheck KEV data (requires VULNCHECK_API_KEY env var)
+	@echo "$(YELLOW)Fetching VulnCheck KEV data...$(NC)"
+	@. venv/bin/activate && python scripts/fetch_vulncheck_kev.py
+	@echo "$(GREEN)✓ VulnCheck data fetched!$(NC)"
+
+vulncheck-match: ## Match VulnCheck CVEs with Nuclei templates
+	@echo "$(YELLOW)Matching VulnCheck CVEs with Nuclei templates...$(NC)"
+	@grep -wof data/lists/NucleiList.txt data/lists/VulnCheck-KEV-List.txt | sort | uniq > data/lists/VulnCheck-Scannable-List.txt || true
+	@echo "$(GREEN)✓ Matched $$(wc -l < data/lists/VulnCheck-Scannable-List.txt) scannable CVEs$(NC)"
+
+compare-kevs: ## Compare CISA and VulnCheck KEV datasets
+	@echo "$(YELLOW)Comparing CISA and VulnCheck KEV sources...$(NC)"
+	@. venv/bin/activate && python scripts/compare_kev_sources.py
+	@echo "$(GREEN)✓ Comparison complete!$(NC)"
+
+vulncheck-all: vulncheck-fetch vulncheck-match compare-kevs ## Fetch VulnCheck data and run full comparison
+	@echo "$(GREEN)✓ VulnCheck integration complete!$(NC)"
+
 examples: ## Show usage examples
 	@echo "$(BLUE)Usage Examples:$(NC)"
 	@echo "  make setup                              # First-time setup"
@@ -91,5 +109,7 @@ examples: ## Show usage examples
 	@echo "  make query-cve CVE=\"CVE-2024-1234\"      # Lookup specific CVE"
 	@echo "  make recent DAYS=30                     # CVEs from last 30 days"
 	@echo "  make ransomware                         # Ransomware CVEs"
+	@echo "  make vulncheck-all                      # Fetch VulnCheck KEV and compare"
+	@echo "  make compare-kevs                       # Compare CISA vs VulnCheck"
 	@echo "  make all                                # Generate everything"
 	@echo "  make clean                              # Remove generated files"

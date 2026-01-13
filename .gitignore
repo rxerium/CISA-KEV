@@ -48,3 +48,17 @@ archive/*
 # Keep empty directories
 !logs/.gitkeep
 !archive/.gitkeep
+
+# API Keys and Secrets (NEVER COMMIT THESE)
+.env
+.env.local
+*.key
+*_key.txt
+**/vulncheck_api_key*
+vulncheck_key*.txt
+.secrets/
+
+# Allow VulnCheck data files
+!data/lists/VulnCheck*.txt
+!data/raw/vulncheck*.json
+!data/raw/vulncheck*.csv
