@@ -1,8 +1,8 @@
 {
-  "total_vulnerabilities": 4466,
-  "unique_cves": 4466,
-  "fetched_at": "2026-01-13T17:21:23.271043",
+  "total_vulnerabilities": 4720,
+  "unique_cves": 4720,
+  "fetched_at": "2026-04-03T08:09:54.907049",
   "source": "VulnCheck KEV",
   "api_version": "v3",
-  "ransomware_associated": 553
+  "ransomware_associated": 568
 }
