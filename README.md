@@ -77,20 +77,22 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,559
-- **Scannable with Nuclei**: 448 (28.7%)
+- **Scannable with Nuclei**: 449 (28.8%)
 - **With Public PoCs**: **985 (63.2%)**
-- **Unscannable**: 1,111 (71.3%)
+- **Unscannable**: 1,110 (71.2%)
 - **Ransomware-Associated**: 313 (20.1%)
 - **Unique Vendors**: 257
 - **Unique Products**: 634
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **362 CVEs**
-- 🔍 **448 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **449 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (63.2%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
@@ -101,8 +103,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 20
-- **Scannable Added**: 5
-- **New Coverage**: 25.0%
+- **Scannable Added**: 6
+- **New Coverage**: 30.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -116,7 +118,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 7 | Apache | 38 | 35 | 38 | 92.1% |
 | 8 | Ivanti | 33 | 19 | 23 | 57.6% |
 | 9 | VMware | 26 | 14 | 18 | 53.8% |
-| 10 | Fortinet | 25 | 9 | 18 | 36.0% |
+| 10 | Fortinet | 25 | 10 | 18 | 40.0% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
