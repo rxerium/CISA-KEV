@@ -87,51 +87,53 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,559
-- **Scannable with Nuclei**: 449 (28.8%)
-- **With Public PoCs**: **985 (63.2%)**
-- **Unscannable**: 1,110 (71.2%)
-- **Ransomware-Associated**: 313 (20.1%)
+- **Total CVEs in KEV**: 1,566
+- **Scannable with Nuclei**: 450 (28.7%)
+- **With Public PoCs**: **985 (62.9%)**
+- **Unscannable**: 1,116 (71.3%)
+- **Ransomware-Associated**: 313 (20.0%)
 - **Unique Vendors**: 257
-- **Unique Products**: 634
+- **Unique Products**: 636
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **362 CVEs**
-- 🔍 **449 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (63.2%) have public proof-of-concept exploits available
+- 🎯 **Microsoft** is the most represented vendor with **366 CVEs**
+- 🔍 **450 CVEs** can be actively scanned with Nuclei templates
+- 💣 **985 CVEs** (62.9%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **313 CVEs** (20.1%) are known to be used in ransomware campaigns
-- 📅 **17 new CVEs** were added in the last 30 days
+- 🦠 **313 CVEs** (20.0%) are known to be used in ransomware campaigns
+- 📅 **24 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (113 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.4%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 17
-- **Scannable Added**: 5
-- **New Coverage**: 29.4%
+- **CVEs Added**: 24
+- **Scannable Added**: 6
+- **New Coverage**: 25.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
-| 1 | Microsoft | 362 | 16 | 218 | 4.4% |
+| 1 | Microsoft | 366 | 16 | 218 | 4.4% |
 | 2 | Apple | 93 | 0 | 30 | 0.0% |
 | 3 | Cisco | 86 | 12 | 24 | 14.0% |
-| 4 | Adobe | 76 | 11 | 44 | 14.5% |
+| 4 | Adobe | 78 | 11 | 44 | 14.1% |
 | 5 | Google | 71 | 0 | 48 | 0.0% |
 | 6 | Oracle | 42 | 18 | 33 | 42.9% |
 | 7 | Apache | 38 | 35 | 38 | 92.1% |
 | 8 | Ivanti | 33 | 19 | 23 | 57.6% |
-| 9 | VMware | 26 | 14 | 18 | 53.8% |
-| 10 | Fortinet | 25 | 10 | 18 | 40.0% |
+| 9 | Fortinet | 26 | 11 | 18 | 42.3% |
+| 10 | VMware | 26 | 14 | 18 | 53.8% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
-| 1 | Windows | 166 |
+| 1 | Windows | 168 |
 | 2 | Multiple Products | 79 |
 | 3 | Chromium V8 | 38 |
 | 4 | Internet Explorer | 34 |
@@ -139,7 +141,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 6 | Office | 28 |
 | 7 | Kernel | 27 |
 | 8 | Win32k | 25 |
-| 9 | Exchange Server | 16 |
+| 9 | Exchange Server | 17 |
 | 10 | ColdFusion | 15 |
 
 ### Top 5 Vulnerability Types (CWEs)
@@ -148,7 +150,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 1 | CWE-20 | 113 |
 | 2 | CWE-78 | 101 |
 | 3 | CWE-787 | 98 |
-| 4 | CWE-416 | 90 |
+| 4 | CWE-416 | 91 |
 | 5 | CWE-119 | 83 |
 
 ### Ransomware-Associated CVEs
@@ -767,7 +769,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-04-13*
+*Last updated: 2026-04-14*
 
 
 ---
