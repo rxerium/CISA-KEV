@@ -111,6 +111,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -118,7 +120,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - **Scannable with Nuclei**: 454 (28.8%)
 - **With Public PoCs**: **985 (62.5%)**
 - **Unscannable**: 1,123 (71.2%)
-- **Ransomware-Associated**: 313 (19.8%)
+- **Ransomware-Associated**: 317 (20.1%)
 - **Unique Vendors**: 257
 - **Unique Products**: 640
 
@@ -128,7 +130,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (62.5%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **313 CVEs** (19.8%) are known to be used in ransomware campaigns
+- 🦠 **317 CVEs** (20.1%) are known to be used in ransomware campaigns
 - 📅 **26 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (115 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.3%, while **Apple** and **Google** have 0%
@@ -178,7 +180,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 102 |
+| Microsoft | 103 |
 | Fortinet | 13 |
 | Ivanti | 12 |
 | Oracle | 11 |
@@ -791,7 +793,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-04-21*
+*Last updated: 2026-04-22*
 
 
 ---
