@@ -139,20 +139,22 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,585
-- **Scannable with Nuclei**: 457 (28.8%)
+- **Total CVEs in KEV**: 1,586
+- **Scannable with Nuclei**: 458 (28.9%)
 - **With Public PoCs**: **985 (62.1%)**
-- **Unscannable**: 1,128 (71.2%)
+- **Unscannable**: 1,128 (71.1%)
 - **Ransomware-Associated**: 317 (20.0%)
-- **Unique Vendors**: 258
-- **Unique Products**: 642
+- **Unique Vendors**: 259
+- **Unique Products**: 643
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **370 CVEs**
-- 🔍 **457 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **458 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (62.1%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
@@ -163,8 +165,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 30
-- **Scannable Added**: 7
-- **New Coverage**: 23.3%
+- **Scannable Added**: 8
+- **New Coverage**: 26.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -819,7 +821,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-04-30*
+*Last updated: 2026-05-01*
 
 
 ---
