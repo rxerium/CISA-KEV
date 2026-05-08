@@ -159,13 +159,15 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,588
+- **Total CVEs in KEV**: 1,589
 - **Scannable with Nuclei**: 458 (28.8%)
 - **With Public PoCs**: **985 (62.0%)**
-- **Unscannable**: 1,130 (71.2%)
+- **Unscannable**: 1,131 (71.2%)
 - **Ransomware-Associated**: 318 (20.0%)
 - **Unique Vendors**: 259
 - **Unique Products**: 643
@@ -178,7 +180,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **318 CVEs** (20.0%) are known to be used in ransomware campaigns
 - 📅 **30 new CVEs** were added in the last 30 days
-- 🔒 Most common vulnerability type: **CWE-20** (115 occurrences)
+- 🔒 Most common vulnerability type: **CWE-20** (116 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.3%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
@@ -196,7 +198,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 5 | Google | 71 | 0 | 48 | 0.0% |
 | 6 | Oracle | 42 | 18 | 33 | 42.9% |
 | 7 | Apache | 39 | 36 | 38 | 92.3% |
-| 8 | Ivanti | 33 | 19 | 23 | 57.6% |
+| 8 | Ivanti | 34 | 19 | 23 | 55.9% |
 | 9 | D-Link | 26 | 10 | 24 | 38.5% |
 | 10 | Fortinet | 26 | 11 | 18 | 42.3% |
 
@@ -217,7 +219,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Top 5 Vulnerability Types (CWEs)
 | Rank | CWE | Count |
 |------|-----|-------|
-| 1 | CWE-20 | 115 |
+| 1 | CWE-20 | 116 |
 | 2 | CWE-78 | 101 |
 | 3 | CWE-787 | 99 |
 | 4 | CWE-416 | 91 |
@@ -839,7 +841,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-05-07*
+*Last updated: 2026-05-08*
 
 
 ---
