@@ -183,19 +183,21 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,591
+- **Total CVEs in KEV**: 1,592
 - **Scannable with Nuclei**: 458 (28.8%)
 - **With Public PoCs**: **985 (61.9%)**
-- **Unscannable**: 1,133 (71.2%)
+- **Unscannable**: 1,134 (71.2%)
 - **Ransomware-Associated**: 321 (20.2%)
 - **Unique Vendors**: 260
-- **Unique Products**: 645
+- **Unique Products**: 646
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **370 CVEs**
+- 🎯 **Microsoft** is the most represented vendor with **371 CVEs**
 - 🔍 **458 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (61.9%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
@@ -207,13 +209,13 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 23
-- **Scannable Added**: 6
-- **New Coverage**: 26.1%
+- **Scannable Added**: 5
+- **New Coverage**: 21.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
-| 1 | Microsoft | 370 | 16 | 218 | 4.3% |
+| 1 | Microsoft | 371 | 16 | 218 | 4.3% |
 | 2 | Apple | 93 | 0 | 30 | 0.0% |
 | 3 | Cisco | 90 | 12 | 24 | 13.3% |
 | 4 | Adobe | 78 | 11 | 44 | 14.1% |
@@ -863,7 +865,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-05-15*
+*Last updated: 2026-05-18*
 
 
 ---
