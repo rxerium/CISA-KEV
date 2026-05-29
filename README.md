@@ -219,6 +219,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -226,7 +228,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - **Scannable with Nuclei**: 461 (28.7%)
 - **With Public PoCs**: **985 (61.3%)**
 - **Unscannable**: 1,145 (71.3%)
-- **Ransomware-Associated**: 323 (20.1%)
+- **Ransomware-Associated**: 325 (20.2%)
 - **Unique Vendors**: 264
 - **Unique Products**: 651
 
@@ -236,7 +238,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (61.3%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **323 CVEs** (20.1%) are known to be used in ransomware campaigns
+- 🦠 **325 CVEs** (20.2%) are known to be used in ransomware campaigns
 - 📅 **21 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (116 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
@@ -899,7 +901,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-05-28*
+*Last updated: 2026-05-29*
 
 
 ---
