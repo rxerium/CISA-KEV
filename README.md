@@ -225,20 +225,22 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,607
-- **Scannable with Nuclei**: 462 (28.7%)
+- **Scannable with Nuclei**: 463 (28.8%)
 - **With Public PoCs**: **985 (61.3%)**
-- **Unscannable**: 1,145 (71.3%)
+- **Unscannable**: 1,144 (71.2%)
 - **Ransomware-Associated**: 325 (20.2%)
 - **Unique Vendors**: 264
 - **Unique Products**: 651
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
-- 🔍 **462 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **463 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (61.3%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
@@ -249,8 +251,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 20
-- **Scannable Added**: 4
-- **New Coverage**: 20.0%
+- **Scannable Added**: 5
+- **New Coverage**: 25.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
