@@ -227,13 +227,15 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,607
+- **Total CVEs in KEV**: 1,608
 - **Scannable with Nuclei**: 463 (28.8%)
 - **With Public PoCs**: **985 (61.3%)**
-- **Unscannable**: 1,144 (71.2%)
+- **Unscannable**: 1,145 (71.2%)
 - **Ransomware-Associated**: 325 (20.2%)
 - **Unique Vendors**: 264
 - **Unique Products**: 651
@@ -245,14 +247,14 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **325 CVEs** (20.2%) are known to be used in ransomware campaigns
-- 📅 **20 new CVEs** were added in the last 30 days
+- 📅 **21 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (116 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 20
+- **CVEs Added**: 21
 - **Scannable Added**: 5
-- **New Coverage**: 25.0%
+- **New Coverage**: 23.8%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -262,7 +264,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 3 | Cisco | 90 | 13 | 24 | 14.4% |
 | 4 | Adobe | 79 | 11 | 44 | 13.9% |
 | 5 | Google | 71 | 0 | 48 | 0.0% |
-| 6 | Oracle | 42 | 18 | 33 | 42.9% |
+| 6 | Oracle | 43 | 18 | 33 | 41.9% |
 | 7 | Apache | 39 | 36 | 38 | 92.3% |
 | 8 | Ivanti | 34 | 19 | 23 | 55.9% |
 | 9 | D-Link | 26 | 10 | 24 | 38.5% |
@@ -907,7 +909,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-06-01*
+*Last updated: 2026-06-02*
 
 
 ---
