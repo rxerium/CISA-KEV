@@ -235,32 +235,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,610
-- **Scannable with Nuclei**: 463 (28.8%)
-- **With Public PoCs**: **985 (61.2%)**
-- **Unscannable**: 1,147 (71.2%)
+- **Total CVEs in KEV**: 1,611
+- **Scannable with Nuclei**: 463 (28.7%)
+- **With Public PoCs**: **985 (61.1%)**
+- **Unscannable**: 1,148 (71.3%)
 - **Ransomware-Associated**: 325 (20.2%)
-- **Unique Vendors**: 264
-- **Unique Products**: 651
+- **Unique Vendors**: 265
+- **Unique Products**: 652
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
 - 🔍 **463 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (61.2%) have public proof-of-concept exploits available
+- 💣 **985 CVEs** (61.1%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **325 CVEs** (20.2%) are known to be used in ransomware campaigns
-- 📅 **23 new CVEs** were added in the last 30 days
+- 📅 **24 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (116 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 23
+- **CVEs Added**: 24
 - **Scannable Added**: 5
-- **New Coverage**: 21.7%
+- **New Coverage**: 20.8%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -915,7 +917,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-06-03*
+*Last updated: 2026-06-04*
 
 
 ---
