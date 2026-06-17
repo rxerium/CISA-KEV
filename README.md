@@ -273,20 +273,22 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,622
-- **Scannable with Nuclei**: 467 (28.8%)
+- **Scannable with Nuclei**: 468 (28.9%)
 - **With Public PoCs**: **985 (60.7%)**
-- **Unscannable**: 1,155 (71.2%)
+- **Unscannable**: 1,154 (71.1%)
 - **Ransomware-Associated**: 327 (20.2%)
 - **Unique Vendors**: 267
 - **Unique Products**: 656
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
-- 🔍 **467 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **468 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (60.7%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
@@ -311,7 +313,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 6 | Oracle | 44 | 18 | 33 | 40.9% |
 | 7 | Apache | 39 | 36 | 38 | 92.3% |
 | 8 | Ivanti | 35 | 20 | 23 | 57.1% |
-| 9 | Linux | 26 | 0 | 18 | 0.0% |
+| 9 | Linux | 26 | 1 | 18 | 3.8% |
 | 10 | D-Link | 26 | 10 | 24 | 38.5% |
 
 ### Top 10 Vulnerable Products
