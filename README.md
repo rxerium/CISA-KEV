@@ -277,20 +277,22 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,622
-- **Scannable with Nuclei**: 468 (28.9%)
+- **Scannable with Nuclei**: 469 (28.9%)
 - **With Public PoCs**: **985 (60.7%)**
-- **Unscannable**: 1,154 (71.1%)
+- **Unscannable**: 1,153 (71.1%)
 - **Ransomware-Associated**: 327 (20.2%)
 - **Unique Vendors**: 267
 - **Unique Products**: 656
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
-- 🔍 **468 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **469 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (60.7%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
@@ -301,8 +303,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Recent Activity (Last 30 Days)
 - **CVEs Added**: 30
-- **Scannable Added**: 7
-- **New Coverage**: 23.3%
+- **Scannable Added**: 8
+- **New Coverage**: 26.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -312,7 +314,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 3 | Cisco | 92 | 13 | 24 | 14.1% |
 | 4 | Adobe | 79 | 11 | 44 | 13.9% |
 | 5 | Google | 72 | 0 | 48 | 0.0% |
-| 6 | Oracle | 44 | 18 | 33 | 40.9% |
+| 6 | Oracle | 44 | 19 | 33 | 43.2% |
 | 7 | Apache | 39 | 36 | 38 | 92.3% |
 | 8 | Ivanti | 35 | 20 | 23 | 57.1% |
 | 9 | Linux | 26 | 1 | 18 | 3.8% |
