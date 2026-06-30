@@ -307,32 +307,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,629
+- **Total CVEs in KEV**: 1,630
 - **Scannable with Nuclei**: 472 (29.0%)
-- **With Public PoCs**: **985 (60.5%)**
-- **Unscannable**: 1,157 (71.0%)
-- **Ransomware-Associated**: 327 (20.1%)
+- **With Public PoCs**: **985 (60.4%)**
+- **Unscannable**: 1,158 (71.0%)
+- **Ransomware-Associated**: 328 (20.1%)
 - **Unique Vendors**: 270
 - **Unique Products**: 660
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
 - 🔍 **472 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (60.5%) have public proof-of-concept exploits available
+- 💣 **985 CVEs** (60.4%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **327 CVEs** (20.1%) are known to be used in ransomware campaigns
-- 📅 **22 new CVEs** were added in the last 30 days
+- 🦠 **328 CVEs** (20.1%) are known to be used in ransomware campaigns
+- 📅 **23 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 22
+- **CVEs Added**: 23
 - **Scannable Added**: 7
-- **New Coverage**: 31.8%
+- **New Coverage**: 30.4%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -374,7 +376,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 103 |
+| Microsoft | 104 |
 | Oracle | 13 |
 | Fortinet | 13 |
 | Ivanti | 12 |
@@ -987,7 +989,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-06-29*
+*Last updated: 2026-06-30*
 
 
 ---
