@@ -315,37 +315,39 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,630
-- **Scannable with Nuclei**: 472 (29.0%)
+- **Total CVEs in KEV**: 1,631
+- **Scannable with Nuclei**: 472 (28.9%)
 - **With Public PoCs**: **985 (60.4%)**
-- **Unscannable**: 1,158 (71.0%)
+- **Unscannable**: 1,159 (71.1%)
 - **Ransomware-Associated**: 328 (20.1%)
 - **Unique Vendors**: 270
 - **Unique Products**: 660
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **377 CVEs**
+- 🎯 **Microsoft** is the most represented vendor with **378 CVEs**
 - 🔍 **472 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (60.4%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **328 CVEs** (20.1%) are known to be used in ransomware campaigns
-- 📅 **22 new CVEs** were added in the last 30 days
+- 📅 **21 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 22
+- **CVEs Added**: 21
 - **Scannable Added**: 7
-- **New Coverage**: 31.8%
+- **New Coverage**: 33.3%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
-| 1 | Microsoft | 377 | 16 | 218 | 4.2% |
+| 1 | Microsoft | 378 | 16 | 218 | 4.2% |
 | 2 | Cisco | 93 | 13 | 24 | 14.0% |
 | 3 | Apple | 93 | 0 | 30 | 0.0% |
 | 4 | Adobe | 79 | 11 | 44 | 13.9% |
@@ -995,7 +997,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-07-01*
+*Last updated: 2026-07-02*
 
 
 ---
