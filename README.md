@@ -363,32 +363,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,647
-- **Scannable with Nuclei**: 474 (28.8%)
+- **Scannable with Nuclei**: 475 (28.8%)
 - **With Public PoCs**: **985 (59.8%)**
-- **Unscannable**: 1,173 (71.2%)
+- **Unscannable**: 1,172 (71.2%)
 - **Ransomware-Associated**: 329 (20.0%)
 - **Unique Vendors**: 275
 - **Unique Products**: 667
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **381 CVEs**
-- 🔍 **474 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **475 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (59.8%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **329 CVEs** (20.0%) are known to be used in ransomware campaigns
-- 📅 **25 new CVEs** were added in the last 30 days
+- 📅 **24 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 25
+- **CVEs Added**: 24
 - **Scannable Added**: 4
-- **New Coverage**: 16.0%
+- **New Coverage**: 16.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -1043,7 +1045,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-07-17*
+*Last updated: 2026-07-20*
 
 
 ---
