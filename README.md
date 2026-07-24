@@ -379,6 +379,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -386,7 +388,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - **Scannable with Nuclei**: 480 (29.0%)
 - **With Public PoCs**: **985 (59.6%)**
 - **Unscannable**: 1,173 (71.0%)
-- **Ransomware-Associated**: 330 (20.0%)
+- **Ransomware-Associated**: 331 (20.0%)
 - **Unique Vendors**: 276
 - **Unique Products**: 669
 
@@ -396,7 +398,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (59.6%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **330 CVEs** (20.0%) are known to be used in ransomware campaigns
+- 🦠 **331 CVEs** (20.0%) are known to be used in ransomware campaigns
 - 📅 **26 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
@@ -455,7 +457,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | VMware | 9 |
 | QNAP | 9 |
 | Atlassian | 8 |
-| Citrix | 7 |
+| Apache | 8 |
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
@@ -1059,7 +1061,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-07-23*
+*Last updated: 2026-07-24*
 
 
 ---
