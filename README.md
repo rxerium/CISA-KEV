@@ -415,24 +415,26 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,661
-- **Scannable with Nuclei**: 484 (29.1%)
+- **Scannable with Nuclei**: 485 (29.2%)
 - **With Public PoCs**: **985 (59.3%)**
-- **Unscannable**: 1,177 (70.9%)
-- **Ransomware-Associated**: 335 (20.2%)
+- **Unscannable**: 1,176 (70.8%)
+- **Ransomware-Associated**: 338 (20.3%)
 - **Unique Vendors**: 276
 - **Unique Products**: 671
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **382 CVEs**
-- 🔍 **484 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **485 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (59.3%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **335 CVEs** (20.2%) are known to be used in ransomware campaigns
+- 🦠 **338 CVEs** (20.3%) are known to be used in ransomware campaigns
 - 📅 **26 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
@@ -543,7 +545,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2025-43300 | Apple | iOS, iPadOS, and macOS | 2025-08-21 | ✓ |  |
 | CVE-2025-54948 | Trend Micro | Apex One | 2025-08-18 | ✓ |  |
 | CVE-2025-8875 | N-able | N-Central | 2025-08-13 | ✓ |  |
-| CVE-2025-8088 | RARLAB | WinRAR | 2025-08-12 | ✓ |  |
+| CVE-2025-8088 | RARLAB | WinRAR | 2025-08-12 | ✓ | 🦠 |
 | CVE-2013-3893 | Microsoft | Internet Explorer | 2025-08-12 | ✓ |  |
 | CVE-2020-25079 | D-Link | DCS-2530L and DCS-2670L D | 2025-08-05 | ✓ |  |
 | CVE-2022-40799 | D-Link | DNR-322L | 2025-08-05 | ✓ |  |
@@ -564,7 +566,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2025-21479 | Qualcomm | Multiple Chipsets | 2025-06-03 | ✓ |  |
 | CVE-2023-39780 | ASUS | RT-AX55 Routers | 2025-06-02 | ✓ |  |
 | CVE-2025-4428 | Ivanti | Endpoint Manager Mobile ( | 2025-05-19 | ✓ |  |
-| CVE-2025-42999 | SAP | NetWeaver | 2025-05-15 | ✓ |  |
+| CVE-2025-42999 | SAP | NetWeaver | 2025-05-15 | ✓ | 🦠 |
 | CVE-2025-32756 | Fortinet | Multiple Products | 2025-05-14 | ✓ |  |
 | CVE-2025-32709 | Microsoft | Windows | 2025-05-13 | ✓ |  |
 | CVE-2025-30397 | Microsoft | Windows | 2025-05-13 | ✓ |  |
@@ -1095,7 +1097,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-08-06*
+*Last updated: 2026-08-07*
 
 
 ---
