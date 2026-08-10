@@ -419,32 +419,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,661
-- **Scannable with Nuclei**: 485 (29.2%)
+- **Total CVEs in KEV**: 1,662
+- **Scannable with Nuclei**: 487 (29.3%)
 - **With Public PoCs**: **985 (59.3%)**
-- **Unscannable**: 1,176 (70.8%)
+- **Unscannable**: 1,175 (70.7%)
 - **Ransomware-Associated**: 338 (20.3%)
 - **Unique Vendors**: 276
-- **Unique Products**: 671
+- **Unique Products**: 672
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **382 CVEs**
-- 🔍 **485 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **487 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (59.3%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **338 CVEs** (20.3%) are known to be used in ransomware campaigns
-- 📅 **26 new CVEs** were added in the last 30 days
+- 📅 **25 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.2%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 26
+- **CVEs Added**: 25
 - **Scannable Added**: 9
-- **New Coverage**: 34.6%
+- **New Coverage**: 36.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -1099,7 +1101,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-08-07*
+*Last updated: 2026-08-10*
 
 
 ---
