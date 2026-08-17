@@ -439,32 +439,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,665
-- **Scannable with Nuclei**: 490 (29.4%)
+- **Scannable with Nuclei**: 492 (29.5%)
 - **With Public PoCs**: **985 (59.2%)**
-- **Unscannable**: 1,175 (70.6%)
-- **Ransomware-Associated**: 339 (20.4%)
+- **Unscannable**: 1,173 (70.5%)
+- **Ransomware-Associated**: 349 (21.0%)
 - **Unique Vendors**: 276
 - **Unique Products**: 674
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **383 CVEs**
-- 🔍 **490 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **492 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (59.2%) have public proof-of-concept exploits available
 - 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **339 CVEs** (20.4%) are known to be used in ransomware campaigns
-- 📅 **21 new CVEs** were added in the last 30 days
+- 🦠 **349 CVEs** (21.0%) are known to be used in ransomware campaigns
+- 📅 **18 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.4%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 21
-- **Scannable Added**: 10
-- **New Coverage**: 47.6%
+- **CVEs Added**: 18
+- **Scannable Added**: 8
+- **New Coverage**: 44.4%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -506,9 +508,9 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 105 |
+| Microsoft | 112 |
+| Fortinet | 14 |
 | Oracle | 13 |
-| Fortinet | 13 |
 | SonicWall | 12 |
 | Ivanti | 12 |
 | Adobe | 10 |
@@ -775,7 +777,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2022-27925 | Synacor | Zimbra Collaboration Suit | 2022-08-11 | ✓ | 🦠 |
 | CVE-2022-30333 | RARLAB | UnRAR | 2022-08-09 | ✓ | 🦠 |
 | CVE-2021-30533 | Google | Chromium PopupBlocker | 2022-06-27 | ✓ |  |
-| CVE-2021-4034 | Red Hat | Polkit | 2022-06-27 | ✓ |  |
+| CVE-2021-4034 | Red Hat | Polkit | 2022-06-27 | ✓ | 🦠 |
 | CVE-2019-8605 | Apple | Multiple Products | 2022-06-27 | ✓ |  |
 | CVE-2022-30190 | Microsoft | Windows | 2022-06-14 | ✓ | 🦠 |
 | CVE-2021-38163 | SAP | NetWeaver | 2022-06-09 | ✓ |  |
@@ -872,7 +874,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2017-0037 | Microsoft | Edge and Internet Explore | 2022-03-28 | [PoC](https://0patch.blogspot.si/2017/03/0patching-another-0-day-internet.html) |  |
 | CVE-2016-7201 | Microsoft | Edge | 2022-03-28 | [PoC](https://github.com/theori-io/chakra-2016-11) |  |
 | CVE-2016-7200 | Microsoft | Edge | 2022-03-28 | [PoC](https://github.com/theori-io/chakra-2016-11) |  |
-| CVE-2016-0189 | Microsoft | Internet Explorer | 2022-03-28 | [PoC](https://www.virusbulletin.com/virusbulletin/2017/01/journey-and-evolution-god-mode-2016-cve-2016-0189/) |  |
+| CVE-2016-0189 | Microsoft | Internet Explorer | 2022-03-28 | [PoC](https://www.virusbulletin.com/virusbulletin/2017/01/journey-and-evolution-god-mode-2016-cve-2016-0189/) | 🦠 |
 | CVE-2016-0151 | Microsoft | Client-Server Run-time Su | 2022-03-28 | [PoC](https://www.exploit-db.com/exploits/39740/) | 🦠 |
 | CVE-2016-0040 | Microsoft | Windows | 2022-03-28 | [PoC](https://www.exploit-db.com/exploits/44586/) |  |
 | CVE-2015-2426 | Microsoft | Windows | 2022-03-28 | [PoC](http://blog.trendmicro.com/trendlabs-security-intelligence/a-look-at-the-open-type-font-manager-vulnerability-from-the-hacking-team-leak/) |  |
@@ -981,7 +983,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2015-2051 | D-Link | DIR-645 Router | 2022-02-10 | [PoC](http://securityadvisories.dlink.com/security/publication.aspx?name=SAP10051) |  |
 | CVE-2015-1130 | Apple | OS X | 2022-02-10 | [PoC](http://www.securityfocus.com/bid/73982) |  |
 | CVE-2014-4404 | Apple | OS X | 2022-02-10 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/osx/local/iokit_keyboard_root.rb) |  |
-| CVE-2022-21882 | Microsoft | Win32k | 2022-02-04 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/local/cve_2022_21882_win32k.rb) |  |
+| CVE-2022-21882 | Microsoft | Win32k | 2022-02-04 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/local/cve_2022_21882_win32k.rb) | 🦠 |
 | CVE-2020-0787 | Microsoft | Windows | 2022-01-28 | [PoC](http://packetstormsecurity.com/files/158056/Background-Intelligent-Transfer-Service-Privilege-Escalation.html) | 🦠 |
 | CVE-2014-1776 | Microsoft | Internet Explorer | 2022-01-28 | [PoC](http://www.signalsec.com/cve-2014-1776-ie-0day-analysis/) |  |
 | CVE-2014-7169 | GNU | Bourne-Again Shell (Bash) | 2022-01-28 | [PoC](http://packetstormsecurity.com/files/128517/VMware-Security-Advisory-2014-0010.html) |  |
@@ -1057,7 +1059,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-1464 | Microsoft | Windows | 2021-11-03 | [PoC](https://medium.com/%40TalBeerySec/glueball-the-story-of-cve-2020-1464-50091a1f98bd) |  |
 | CVE-2021-34527 | Microsoft | Windows | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html) | 🦠 |
 | CVE-2021-31207 | Microsoft | Exchange Server | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/163895/Microsoft-Exchange-ProxyShell-Remote-Code-Execution.html) | 🦠 |
-| CVE-2019-0803 | Microsoft | Win32k | 2021-11-03 | [PoC](https///github.com:Ascotbe/Kernelhub.git) |  |
+| CVE-2019-0803 | Microsoft | Win32k | 2021-11-03 | [PoC](https///github.com:Ascotbe/Kernelhub.git) | 🦠 |
 | CVE-2021-28310 | Microsoft | Win32k | 2021-11-03 | [PoC](https://github.com/Rafael-Svechinskaya/IOC_for_CVE-2021-28310) |  |
 | CVE-2020-1350 | Microsoft | Windows | 2021-11-03 | [PoC](https///gitee.com:keyboxdzd/SIGRed_RCE_PoC.git) |  |
 | CVE-2021-26411 | Microsoft | Internet Explorer | 2021-11-03 | [PoC](https://github.com/CrackerCat/CVE-2021-26411) | 🦠 |
@@ -1067,7 +1069,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2021-36942 | Microsoft | Windows | 2021-11-03 | [PoC](https://www.kb.cert.org/vuls/id/405600) | 🦠 |
 | CVE-2019-1215 | Microsoft | Windows | 2021-11-03 | [PoC](https///gitlab.com:gavz/CVE-2019-1215.git) | 🦠 |
 | CVE-2018-0798 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/Sunqiz/CVE-2018-0798-reproduction) |  |
-| CVE-2018-0802 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/rxwx/CVE-2018-0802) |  |
+| CVE-2018-0802 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/rxwx/CVE-2018-0802) | 🦠 |
 | CVE-2012-0158 | Microsoft | MSCOMCTL.OCX | 2021-11-03 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/fileformat/ms12_027_mscomctl_bof.rb) |  |
 | CVE-2015-1641 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/Cyberclues/rtf_exploit_extractor) |  |
 | CVE-2019-0541 | Microsoft | MSHTML | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46536/) |  |
@@ -1119,7 +1121,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-08-14*
+*Last updated: 2026-08-17*
 
 
 ---
