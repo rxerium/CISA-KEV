@@ -443,23 +443,25 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 591 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 590 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
 - **Total CVEs in KEV**: 1,666
-- **Scannable with Nuclei**: 492 (29.5%)
+- **Scannable with Nuclei**: 493 (29.6%)
 - **With Public PoCs**: **985 (59.1%)**
-- **Unscannable**: 1,174 (70.5%)
+- **Unscannable**: 1,173 (70.4%)
 - **Ransomware-Associated**: 349 (20.9%)
 - **Unique Vendors**: 277
 - **Unique Products**: 675
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **383 CVEs**
-- 🔍 **492 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **493 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (59.1%) have public proof-of-concept exploits available
-- 🎯 **394 CVEs** have both PoC and Nuclei template (fully testable)
-- 🔓 **591 CVEs** have PoC but no Nuclei template (testing gap)
+- 🎯 **395 CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **590 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **349 CVEs** (20.9%) are known to be used in ransomware campaigns
 - 📅 **19 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
@@ -523,11 +525,11 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
-**Total Gap CVEs:** 591 vulnerabilities have public exploits but lack automated detection templates.
+**Total Gap CVEs:** 590 vulnerabilities have public exploits but lack automated detection templates.
 
 📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
-**All 591 gap CVEs** listed below (sorted by date added to KEV, most recent first):
+**All 590 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
 | CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
 |--------|--------|---------|------------|-----|------------|
@@ -894,7 +896,6 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-9377 | D-Link | DIR-610 Devices | 2022-03-25 | [PoC](https://gist.github.com/GouveaHeitor/131557f9de7d571f118f59805df852dc) |  |
 | CVE-2019-12991 | Citrix | SD-WAN and NetScaler | 2022-03-25 | [PoC](http://packetstormsecurity.com/files/153638/Citrix-SD-WAN-Appliance-10.2.2-Authentication-Bypass-Remote-Command-Execution.html) |  |
 | CVE-2019-11043 | PHP | FastCGI Process Manager ( | 2022-03-25 | [PoC](https://github.com/neex/phuip-fpizdam) | 🦠 |
-| CVE-2019-1003030 | Jenkins | Matrix Project Plugin | 2022-03-25 | [PoC](http://packetstormsecurity.com/files/159603/Jenkins-2.63-Sandbox-Bypass.html) |  |
 | CVE-2018-8414 | Microsoft | Windows | 2022-03-25 | [PoC](https///github.com:whereisr0da/CVE-2018-8414-POC.git) |  |
 | CVE-2018-14839 | LG | N1A1 NAS | 2022-03-25 | [PoC](https://medium.com/%400x616163/lg-n1a1-unauthenticated-remote-command-injection-cve-2018-14839-9d2cf760e247) |  |
 | CVE-2017-6334 | NETGEAR | DGN2200 Devices | 2022-03-25 | [PoC](https://www.exploit-db.com/exploits/41459/) |  |
@@ -1123,7 +1124,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-08-17*
+*Last updated: 2026-08-18*
 
 
 ---
