@@ -457,6 +457,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 590 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 590 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -464,7 +466,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - **Scannable with Nuclei**: 494 (29.5%)
 - **With Public PoCs**: **985 (58.9%)**
 - **Unscannable**: 1,179 (70.5%)
-- **Ransomware-Associated**: 349 (20.9%)
+- **Ransomware-Associated**: 352 (21.0%)
 - **Unique Vendors**: 278
 - **Unique Products**: 679
 
@@ -474,7 +476,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (58.9%) have public proof-of-concept exploits available
 - 🎯 **395 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **590 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **349 CVEs** (20.9%) are known to be used in ransomware campaigns
+- 🦠 **352 CVEs** (21.0%) are known to be used in ransomware campaigns
 - 📅 **20 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.4%, while **Apple** and **Google** have 0%
@@ -524,10 +526,10 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 112 |
+| Microsoft | 114 |
 | Fortinet | 14 |
+| SonicWall | 13 |
 | Oracle | 13 |
-| SonicWall | 12 |
 | Ivanti | 12 |
 | Adobe | 10 |
 | VMware | 9 |
@@ -569,7 +571,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2016-7836 | SKYSEA | Client View | 2025-10-14 | ✓ |  |
 | CVE-2021-22555 | Linux | Kernel | 2025-10-06 | ✓ |  |
 | CVE-2010-3962 | Microsoft | Internet Explorer | 2025-10-06 | ✓ |  |
-| CVE-2021-43226 | Microsoft | Windows | 2025-10-06 | ✓ |  |
+| CVE-2021-43226 | Microsoft | Windows | 2025-10-06 | ✓ | 🦠 |
 | CVE-2013-3918 | Microsoft | Windows | 2025-10-06 | ✓ |  |
 | CVE-2010-3765 | Mozilla | Multiple Products | 2025-10-06 | ✓ |  |
 | CVE-2014-6278 | GNU | GNU Bash | 2025-10-02 | ✓ |  |
@@ -1085,7 +1087,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2019-1215 | Microsoft | Windows | 2021-11-03 | [PoC](https///gitlab.com:gavz/CVE-2019-1215.git) | 🦠 |
 | CVE-2018-0798 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/Sunqiz/CVE-2018-0798-reproduction) |  |
 | CVE-2018-0802 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/rxwx/CVE-2018-0802) | 🦠 |
-| CVE-2012-0158 | Microsoft | MSCOMCTL.OCX | 2021-11-03 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/fileformat/ms12_027_mscomctl_bof.rb) |  |
+| CVE-2012-0158 | Microsoft | MSCOMCTL.OCX | 2021-11-03 | [PoC](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/fileformat/ms12_027_mscomctl_bof.rb) | 🦠 |
 | CVE-2015-1641 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/Cyberclues/rtf_exploit_extractor) |  |
 | CVE-2019-0541 | Microsoft | MSHTML | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46536/) |  |
 | CVE-2017-11882 | Microsoft | Office | 2021-11-03 | [PoC](https://github.com/0x09AL/CVE-2017-11882-metasploit) | 🦠 |
