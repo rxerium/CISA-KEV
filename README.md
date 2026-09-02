@@ -485,32 +485,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,687
-- **Scannable with Nuclei**: 502 (29.8%)
-- **With Public PoCs**: **985 (58.4%)**
-- **Unscannable**: 1,185 (70.2%)
-- **Ransomware-Associated**: 352 (20.9%)
-- **Unique Vendors**: 281
-- **Unique Products**: 686
+- **Total CVEs in KEV**: 1,694
+- **Scannable with Nuclei**: 505 (29.8%)
+- **With Public PoCs**: **985 (58.1%)**
+- **Unscannable**: 1,189 (70.2%)
+- **Ransomware-Associated**: 352 (20.8%)
+- **Unique Vendors**: 283
+- **Unique Products**: 689
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **386 CVEs**
-- 🔍 **502 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (58.4%) have public proof-of-concept exploits available
+- 🔍 **505 CVEs** can be actively scanned with Nuclei templates
+- 💣 **985 CVEs** (58.1%) have public proof-of-concept exploits available
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **352 CVEs** (20.9%) are known to be used in ransomware campaigns
-- 📅 **30 new CVEs** were added in the last 30 days
+- 🦠 **352 CVEs** (20.8%) are known to be used in ransomware campaigns
+- 📅 **37 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.7%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 30
-- **Scannable Added**: 10
-- **New Coverage**: 33.3%
+- **CVEs Added**: 37
+- **Scannable Added**: 13
+- **New Coverage**: 35.1%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -544,7 +546,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | Rank | CWE | Count |
 |------|-----|-------|
 | 1 | CWE-20 | 118 |
-| 2 | CWE-78 | 108 |
+| 2 | CWE-78 | 110 |
 | 3 | CWE-787 | 101 |
 | 4 | CWE-416 | 93 |
 | 5 | CWE-119 | 85 |
