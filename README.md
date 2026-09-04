@@ -493,14 +493,16 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,694
+- **Total CVEs in KEV**: 1,695
 - **Scannable with Nuclei**: 505 (29.8%)
 - **With Public PoCs**: **985 (58.1%)**
-- **Unscannable**: 1,189 (70.2%)
-- **Ransomware-Associated**: 352 (20.8%)
+- **Unscannable**: 1,190 (70.2%)
+- **Ransomware-Associated**: 354 (20.9%)
 - **Unique Vendors**: 283
 - **Unique Products**: 689
 
@@ -510,15 +512,15 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (58.1%) have public proof-of-concept exploits available
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **352 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **33 new CVEs** were added in the last 30 days
+- 🦠 **354 CVEs** (20.9%) are known to be used in ransomware campaigns
+- 📅 **34 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.7%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 33
+- **CVEs Added**: 34
 - **Scannable Added**: 10
-- **New Coverage**: 30.3%
+- **New Coverage**: 29.4%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -527,7 +529,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 2 | Cisco | 96 | 13 | 24 | 13.5% |
 | 3 | Apple | 94 | 0 | 30 | 0.0% |
 | 4 | Adobe | 80 | 12 | 44 | 15.0% |
-| 5 | Google | 72 | 0 | 48 | 0.0% |
+| 5 | Google | 73 | 0 | 48 | 0.0% |
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
 | 7 | Apache | 40 | 37 | 38 | 92.5% |
 | 8 | Ivanti | 35 | 20 | 23 | 57.1% |
@@ -539,7 +541,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 |------|---------|-----------|
 | 1 | Windows | 170 |
 | 2 | Multiple Products | 79 |
-| 3 | Chromium V8 | 39 |
+| 3 | Chromium V8 | 40 |
 | 4 | Internet Explorer | 36 |
 | 5 | Flash Player | 33 |
 | 6 | Kernel | 31 |
@@ -560,12 +562,12 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 114 |
+| Microsoft | 115 |
 | Fortinet | 14 |
 | SonicWall | 13 |
 | Oracle | 13 |
 | Ivanti | 12 |
-| Adobe | 10 |
+| Adobe | 11 |
 | VMware | 9 |
 | QNAP | 9 |
 | Atlassian | 8 |
@@ -817,7 +819,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2013-2596 | Linux | Kernel | 2022-09-15 | ✓ |  |
 | CVE-2013-2094 | Linux | Kernel | 2022-09-15 | ✓ |  |
 | CVE-2010-2568 | Microsoft | Windows | 2022-09-15 | ✓ |  |
-| CVE-2022-37969 | Microsoft | Windows | 2022-09-14 | ✓ |  |
+| CVE-2022-37969 | Microsoft | Windows | 2022-09-14 | ✓ | 🦠 |
 | CVE-2022-26258 | D-Link | DIR-820L | 2022-09-08 | ✓ |  |
 | CVE-2020-9934 | Apple | iOS, iPadOS, and macOS | 2022-09-08 | ✓ |  |
 | CVE-2018-7445 | MikroTik | RouterOS | 2022-09-08 | ✓ |  |
@@ -990,7 +992,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2017-0261 | Microsoft | Office | 2022-03-03 | [PoC](https///github.com:erfze/CVE-2017-0261.git) |  |
 | CVE-2016-7855 | Adobe | Flash Player | 2022-03-03 | [PoC](https://github.com/swagatbora90/CheckFlashPlayerVersion) |  |
 | CVE-2016-5195 | Linux | Kernel | 2022-03-03 | [PoC](http://packetstormsecurity.com/files/139277/Kernel-Live-Patch-Security-Notice-LSN-0012-1.html) |  |
-| CVE-2016-4117 | Adobe | Flash Player | 2022-03-03 | [PoC](https://www.exploit-db.com/exploits/46339/) |  |
+| CVE-2016-4117 | Adobe | Flash Player | 2022-03-03 | [PoC](https://www.exploit-db.com/exploits/46339/) | 🦠 |
 | CVE-2016-0099 | Microsoft | Windows | 2022-03-03 | [PoC](https://www.exploit-db.com/exploits/39574/) | 🦠 |
 | CVE-2015-5119 | Adobe | Flash Player | 2022-03-03 | [PoC](https://packetstormsecurity.com/files/132600/Adobe-Flash-Player-ByteArray-Use-After-Free.html) |  |
 | CVE-2015-3043 | Adobe | Flash Player | 2022-03-03 | [PoC](https://www.exploit-db.com/exploits/37536/) |  |
