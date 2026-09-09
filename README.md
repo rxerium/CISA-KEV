@@ -505,6 +505,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
@@ -512,7 +514,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - **Scannable with Nuclei**: 506 (29.8%)
 - **With Public PoCs**: **985 (58.0%)**
 - **Unscannable**: 1,193 (70.2%)
-- **Ransomware-Associated**: 355 (20.9%)
+- **Ransomware-Associated**: 358 (21.1%)
 - **Unique Vendors**: 283
 - **Unique Products**: 690
 
@@ -522,7 +524,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 💣 **985 CVEs** (58.0%) have public proof-of-concept exploits available
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **355 CVEs** (20.9%) are known to be used in ransomware campaigns
+- 🦠 **358 CVEs** (21.1%) are known to be used in ransomware campaigns
 - 📅 **37 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
@@ -572,7 +574,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Ransomware-Associated CVEs
 | Vendor | Ransomware CVEs |
 |--------|-----------------|
-| Microsoft | 115 |
+| Microsoft | 117 |
 | Fortinet | 14 |
 | SonicWall | 13 |
 | Oracle | 13 |
@@ -1116,7 +1118,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2021-34523 | Microsoft | Exchange Server | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/163895/Microsoft-Exchange-ProxyShell-Remote-Code-Execution.html) | 🦠 |
 | CVE-2020-0688 | Microsoft | Exchange Server | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156592/Microsoft-Exchange-2019-15.2.221.12-Remote-Code-Execution.html) | 🦠 |
 | CVE-2017-0143 | Microsoft | Windows | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/154690/DOUBLEPULSAR-Payload-Execution-Neutralization.html) | 🦠 |
-| CVE-2016-7255 | Microsoft | Win32k | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/140468/Microsoft-Windows-Kernel-win32k.sys-NtSetWindowLongPtr-Privilege-Escalation.html) |  |
+| CVE-2016-7255 | Microsoft | Win32k | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/140468/Microsoft-Windows-Kernel-win32k.sys-NtSetWindowLongPtr-Privilege-Escalation.html) | 🦠 |
 | CVE-2019-0708 | Microsoft | Remote Desktop Services | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/153133/Microsoft-Windows-Remote-Desktop-BlueKeep-Denial-Of-Service.html) | 🦠 |
 | CVE-2020-1464 | Microsoft | Windows | 2021-11-03 | [PoC](https://medium.com/%40TalBeerySec/glueball-the-story-of-cve-2020-1464-50091a1f98bd) |  |
 | CVE-2021-34527 | Microsoft | Windows | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/167261/Print-Spooler-Remote-DLL-Injection.html) | 🦠 |
@@ -1125,7 +1127,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2021-28310 | Microsoft | Win32k | 2021-11-03 | [PoC](https://github.com/Rafael-Svechinskaya/IOC_for_CVE-2021-28310) |  |
 | CVE-2020-1350 | Microsoft | Windows | 2021-11-03 | [PoC](https///gitee.com:keyboxdzd/SIGRed_RCE_PoC.git) |  |
 | CVE-2021-26411 | Microsoft | Internet Explorer | 2021-11-03 | [PoC](https://github.com/CrackerCat/CVE-2021-26411) | 🦠 |
-| CVE-2019-0859 | Microsoft | Win32k | 2021-11-03 | [PoC](https///github.com:Sheisback/CVE-2019-0859-1day-Exploit.git) |  |
+| CVE-2019-0859 | Microsoft | Win32k | 2021-11-03 | [PoC](https///github.com:Sheisback/CVE-2019-0859-1day-Exploit.git) | 🦠 |
 | CVE-2021-40444 | Microsoft | MSHTML | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/165214/Microsoft-Office-Word-MSHTML-Remote-Code-Execution.html) | 🦠 |
 | CVE-2017-8759 | Microsoft | .NET Framework | 2021-11-03 | [PoC](https://github.com/bhdresh/CVE-2017-8759) |  |
 | CVE-2021-36942 | Microsoft | Windows | 2021-11-03 | [PoC](https://www.kb.cert.org/vuls/id/405600) | 🦠 |
