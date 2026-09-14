@@ -517,16 +517,18 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,709
+- **Total CVEs in KEV**: 1,710
 - **Scannable with Nuclei**: 509 (29.8%)
 - **With Public PoCs**: **985 (57.6%)**
-- **Unscannable**: 1,200 (70.2%)
+- **Unscannable**: 1,201 (70.2%)
 - **Ransomware-Associated**: 360 (21.1%)
 - **Unique Vendors**: 283
-- **Unique Products**: 692
+- **Unique Products**: 693
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **388 CVEs**
@@ -535,20 +537,20 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **360 CVEs** (21.1%) are known to be used in ransomware campaigns
-- 📅 **44 new CVEs** were added in the last 30 days
+- 📅 **45 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (118 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 44
+- **CVEs Added**: 45
 - **Scannable Added**: 11
-- **New Coverage**: 25.0%
+- **New Coverage**: 24.4%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
 | 1 | Microsoft | 388 | 18 | 218 | 4.6% |
-| 2 | Cisco | 97 | 14 | 24 | 14.4% |
+| 2 | Cisco | 98 | 14 | 24 | 14.3% |
 | 3 | Apple | 94 | 0 | 30 | 0.0% |
 | 4 | Adobe | 81 | 12 | 44 | 14.8% |
 | 5 | Google | 74 | 0 | 48 | 0.0% |
