@@ -561,13 +561,15 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,728
+- **Total CVEs in KEV**: 1,729
 - **Scannable with Nuclei**: 518 (30.0%)
 - **With Public PoCs**: **985 (57.0%)**
-- **Unscannable**: 1,210 (70.0%)
+- **Unscannable**: 1,211 (70.0%)
 - **Ransomware-Associated**: 361 (20.9%)
 - **Unique Vendors**: 283
 - **Unique Products**: 697
@@ -579,21 +581,21 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.9%) are known to be used in ransomware campaigns
-- 📅 **43 new CVEs** were added in the last 30 days
+- 📅 **44 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 43
+- **CVEs Added**: 44
 - **Scannable Added**: 11
-- **New Coverage**: 25.6%
+- **New Coverage**: 25.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
 | 1 | Microsoft | 389 | 18 | 218 | 4.6% |
 | 2 | Cisco | 99 | 14 | 24 | 14.1% |
-| 3 | Apple | 94 | 0 | 30 | 0.0% |
+| 3 | Apple | 95 | 0 | 30 | 0.0% |
 | 4 | Adobe | 82 | 13 | 44 | 15.9% |
 | 5 | Google | 75 | 0 | 48 | 0.0% |
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
@@ -606,7 +608,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 172 |
-| 2 | Multiple Products | 83 |
+| 2 | Multiple Products | 84 |
 | 3 | Chromium V8 | 41 |
 | 4 | Internet Explorer | 36 |
 | 5 | Kernel | 34 |
@@ -621,7 +623,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 |------|-----|-------|
 | 1 | CWE-20 | 119 |
 | 2 | CWE-78 | 110 |
-| 3 | CWE-787 | 104 |
+| 3 | CWE-787 | 105 |
 | 4 | CWE-416 | 93 |
 | 5 | CWE-119 | 87 |
 
