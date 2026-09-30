@@ -565,13 +565,15 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,729
-- **Scannable with Nuclei**: 518 (30.0%)
-- **With Public PoCs**: **985 (57.0%)**
-- **Unscannable**: 1,211 (70.0%)
+- **Total CVEs in KEV**: 1,730
+- **Scannable with Nuclei**: 518 (29.9%)
+- **With Public PoCs**: **985 (56.9%)**
+- **Unscannable**: 1,212 (70.1%)
 - **Ransomware-Associated**: 361 (20.9%)
 - **Unique Vendors**: 283
 - **Unique Products**: 697
@@ -579,24 +581,24 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **389 CVEs**
 - 🔍 **518 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (57.0%) have public proof-of-concept exploits available
+- 💣 **985 CVEs** (56.9%) have public proof-of-concept exploits available
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.9%) are known to be used in ransomware campaigns
-- 📅 **42 new CVEs** were added in the last 30 days
+- 📅 **43 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 42
+- **CVEs Added**: 43
 - **Scannable Added**: 10
-- **New Coverage**: 23.8%
+- **New Coverage**: 23.3%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
 | 1 | Microsoft | 389 | 18 | 218 | 4.6% |
-| 2 | Cisco | 99 | 14 | 24 | 14.1% |
+| 2 | Cisco | 100 | 14 | 24 | 14.0% |
 | 3 | Apple | 95 | 0 | 30 | 0.0% |
 | 4 | Adobe | 82 | 13 | 44 | 15.9% |
 | 5 | Google | 75 | 0 | 48 | 0.0% |
