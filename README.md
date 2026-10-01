@@ -569,16 +569,18 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 588 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,730
+- **Total CVEs in KEV**: 1,731
 - **Scannable with Nuclei**: 518 (29.9%)
 - **With Public PoCs**: **985 (56.9%)**
-- **Unscannable**: 1,212 (70.1%)
+- **Unscannable**: 1,213 (70.1%)
 - **Ransomware-Associated**: 361 (20.9%)
 - **Unique Vendors**: 283
-- **Unique Products**: 697
+- **Unique Products**: 698
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **389 CVEs**
@@ -587,14 +589,14 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🎯 **397 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **588 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.9%) are known to be used in ransomware campaigns
-- 📅 **43 new CVEs** were added in the last 30 days
+- 📅 **44 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 43
+- **CVEs Added**: 44
 - **Scannable Added**: 10
-- **New Coverage**: 23.3%
+- **New Coverage**: 22.7%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -607,8 +609,8 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
 | 7 | Apache | 40 | 37 | 38 | 92.5% |
 | 8 | Ivanti | 35 | 22 | 23 | 62.9% |
-| 9 | Linux | 31 | 1 | 18 | 3.2% |
-| 10 | Fortinet | 30 | 12 | 18 | 40.0% |
+| 9 | Fortinet | 31 | 12 | 18 | 38.7% |
+| 10 | Linux | 31 | 1 | 18 | 3.2% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
