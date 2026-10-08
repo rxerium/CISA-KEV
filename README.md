@@ -589,32 +589,34 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 587 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 587 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,734
-- **Scannable with Nuclei**: 519 (29.9%)
-- **With Public PoCs**: **985 (56.8%)**
-- **Unscannable**: 1,215 (70.1%)
+- **Total CVEs in KEV**: 1,739
+- **Scannable with Nuclei**: 522 (30.0%)
+- **With Public PoCs**: **985 (56.6%)**
+- **Unscannable**: 1,217 (70.0%)
 - **Ransomware-Associated**: 361 (20.8%)
-- **Unique Vendors**: 284
-- **Unique Products**: 699
+- **Unique Vendors**: 288
+- **Unique Products**: 703
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **389 CVEs**
-- 🔍 **519 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (56.8%) have public proof-of-concept exploits available
+- 🔍 **522 CVEs** can be actively scanned with Nuclei templates
+- 💣 **985 CVEs** (56.6%) have public proof-of-concept exploits available
 - 🎯 **398 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **587 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **35 new CVEs** were added in the last 30 days
+- 📅 **40 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 35
-- **Scannable Added**: 5
-- **New Coverage**: 14.3%
+- **CVEs Added**: 40
+- **Scannable Added**: 7
+- **New Coverage**: 17.5%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -625,7 +627,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 4 | Adobe | 82 | 13 | 44 | 15.9% |
 | 5 | Google | 75 | 0 | 48 | 0.0% |
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
-| 7 | Apache | 40 | 37 | 38 | 92.5% |
+| 7 | Apache | 41 | 38 | 38 | 92.7% |
 | 8 | Ivanti | 35 | 22 | 23 | 62.9% |
 | 9 | Fortinet | 31 | 12 | 18 | 38.7% |
 | 10 | Linux | 31 | 1 | 18 | 3.2% |
