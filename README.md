@@ -601,51 +601,53 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 587 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 587 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,739
+- **Total CVEs in KEV**: 1,741
 - **Scannable with Nuclei**: 522 (30.0%)
 - **With Public PoCs**: **985 (56.6%)**
-- **Unscannable**: 1,217 (70.0%)
-- **Ransomware-Associated**: 361 (20.8%)
+- **Unscannable**: 1,219 (70.0%)
+- **Ransomware-Associated**: 361 (20.7%)
 - **Unique Vendors**: 288
-- **Unique Products**: 703
+- **Unique Products**: 704
 
 ### Key Insights
-- 🎯 **Microsoft** is the most represented vendor with **389 CVEs**
+- 🎯 **Microsoft** is the most represented vendor with **390 CVEs**
 - 🔍 **522 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (56.6%) have public proof-of-concept exploits available
 - 🎯 **398 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **587 CVEs** have PoC but no Nuclei template (testing gap)
-- 🦠 **361 CVEs** (20.8%) are known to be used in ransomware campaigns
-- 📅 **30 new CVEs** were added in the last 30 days
+- 🦠 **361 CVEs** (20.7%) are known to be used in ransomware campaigns
+- 📅 **32 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 30
+- **CVEs Added**: 32
 - **Scannable Added**: 4
-- **New Coverage**: 13.3%
+- **New Coverage**: 12.5%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
-| 1 | Microsoft | 389 | 18 | 218 | 4.6% |
+| 1 | Microsoft | 390 | 18 | 218 | 4.6% |
 | 2 | Cisco | 100 | 14 | 24 | 14.0% |
 | 3 | Apple | 95 | 0 | 30 | 0.0% |
 | 4 | Adobe | 82 | 13 | 44 | 15.9% |
 | 5 | Google | 75 | 0 | 48 | 0.0% |
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
 | 7 | Apache | 41 | 38 | 38 | 92.7% |
-| 8 | Ivanti | 35 | 22 | 23 | 62.9% |
+| 8 | Ivanti | 36 | 22 | 23 | 61.1% |
 | 9 | Fortinet | 31 | 12 | 18 | 38.7% |
 | 10 | Linux | 31 | 1 | 18 | 3.2% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
-| 1 | Windows | 172 |
+| 1 | Windows | 173 |
 | 2 | Multiple Products | 84 |
 | 3 | Chromium V8 | 41 |
 | 4 | Internet Explorer | 36 |
