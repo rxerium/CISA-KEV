@@ -609,11 +609,13 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 586 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 586 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,745
-- **Scannable with Nuclei**: 525 (30.1%)
+- **Total CVEs in KEV**: 1,746
+- **Scannable with Nuclei**: 526 (30.1%)
 - **With Public PoCs**: **985 (56.4%)**
 - **Unscannable**: 1,220 (69.9%)
 - **Ransomware-Associated**: 361 (20.7%)
@@ -622,19 +624,19 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **390 CVEs**
-- 🔍 **525 CVEs** can be actively scanned with Nuclei templates
+- 🔍 **526 CVEs** can be actively scanned with Nuclei templates
 - 💣 **985 CVEs** (56.4%) have public proof-of-concept exploits available
 - 🎯 **399 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **586 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.7%) are known to be used in ransomware campaigns
-- 📅 **35 new CVEs** were added in the last 30 days
+- 📅 **36 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 35
-- **Scannable Added**: 6
-- **New Coverage**: 17.1%
+- **CVEs Added**: 36
+- **Scannable Added**: 7
+- **New Coverage**: 19.4%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -654,7 +656,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 173 |
-| 2 | Multiple Products | 84 |
+| 2 | Multiple Products | 85 |
 | 3 | Chromium V8 | 41 |
 | 4 | Internet Explorer | 36 |
 | 5 | Kernel | 34 |
