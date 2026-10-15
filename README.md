@@ -607,38 +607,40 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 587 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 586 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,741
-- **Scannable with Nuclei**: 524 (30.1%)
-- **With Public PoCs**: **985 (56.6%)**
-- **Unscannable**: 1,217 (69.9%)
+- **Total CVEs in KEV**: 1,745
+- **Scannable with Nuclei**: 525 (30.1%)
+- **With Public PoCs**: **985 (56.4%)**
+- **Unscannable**: 1,220 (69.9%)
 - **Ransomware-Associated**: 361 (20.7%)
-- **Unique Vendors**: 288
-- **Unique Products**: 704
+- **Unique Vendors**: 289
+- **Unique Products**: 705
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **390 CVEs**
-- 🔍 **524 CVEs** can be actively scanned with Nuclei templates
-- 💣 **985 CVEs** (56.6%) have public proof-of-concept exploits available
-- 🎯 **398 CVEs** have both PoC and Nuclei template (fully testable)
-- 🔓 **587 CVEs** have PoC but no Nuclei template (testing gap)
+- 🔍 **525 CVEs** can be actively scanned with Nuclei templates
+- 💣 **985 CVEs** (56.4%) have public proof-of-concept exploits available
+- 🎯 **399 CVEs** have both PoC and Nuclei template (fully testable)
+- 🔓 **586 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.7%) are known to be used in ransomware campaigns
-- 📅 **31 new CVEs** were added in the last 30 days
+- 📅 **35 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 31
+- **CVEs Added**: 35
 - **Scannable Added**: 6
-- **New Coverage**: 19.4%
+- **New Coverage**: 17.1%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
 |------|--------|-----------|-----------|----------|-------------------|
 | 1 | Microsoft | 390 | 18 | 218 | 4.6% |
-| 2 | Cisco | 100 | 14 | 24 | 14.0% |
+| 2 | Cisco | 101 | 14 | 24 | 13.9% |
 | 3 | Apple | 95 | 0 | 30 | 0.0% |
 | 4 | Adobe | 82 | 13 | 44 | 15.9% |
 | 5 | Google | 75 | 0 | 48 | 0.0% |
@@ -666,7 +668,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | Rank | CWE | Count |
 |------|-----|-------|
 | 1 | CWE-20 | 119 |
-| 2 | CWE-78 | 110 |
+| 2 | CWE-78 | 111 |
 | 3 | CWE-787 | 105 |
 | 4 | CWE-416 | 93 |
 | 5 | CWE-119 | 88 |
@@ -687,11 +689,11 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ### 🔓 Priority Gap: CVEs with Public PoCs but No Nuclei Template
 
-**Total Gap CVEs:** 587 vulnerabilities have public exploits but lack automated detection templates.
+**Total Gap CVEs:** 586 vulnerabilities have public exploits but lack automated detection templates.
 
 📥 **Download Full Data:** [CISA-Priority-Gap.csv](CISA-Priority-Gap.csv) - Detailed CSV export with PoC URLs, EPSS scores, CVSS scores, severity levels, and vulnerability metadata.
 
-**All 587 gap CVEs** listed below (sorted by date added to KEV, most recent first):
+**All 586 gap CVEs** listed below (sorted by date added to KEV, most recent first):
 
 | CVE ID | Vendor | Product | Date Added | PoC | Ransomware |
 |--------|--------|---------|------------|-----|------------|
@@ -985,7 +987,6 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2013-0074 | Microsoft | Silverlight | 2022-05-25 | ✓ | 🦠 |
 | CVE-2010-1428 | Red Hat | JBoss | 2022-05-25 | ✓ | 🦠 |
 | CVE-2010-0840 | Oracle | Java Runtime Environment  | 2022-05-25 | ✓ |  |
-| CVE-2010-0738 | Red Hat | JBoss | 2022-05-25 | ✓ | 🦠 |
 | CVE-2018-8611 | Microsoft | Windows | 2022-05-24 | ✓ |  |
 | CVE-2017-0147 | Microsoft | SMBv1 server | 2022-05-24 | ✓ | 🦠 |
 | CVE-2017-0022 | Microsoft | XML Core Services | 2022-05-24 | ✓ |  |
@@ -1283,7 +1284,7 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | CVE-2020-3950 | VMware | Multiple Products | 2021-11-03 | [PoC](http://packetstormsecurity.com/files/156843/VMware-Fusion-11.5.2-Privilege-Escalation.html) |  |
 | CVE-2019-8394 | Zoho | ManageEngine | 2021-11-03 | [PoC](https://www.exploit-db.com/exploits/46413/) |  |
 
-*Last updated: 2026-10-14*
+*Last updated: 2026-10-15*
 
 
 ---
