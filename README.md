@@ -613,16 +613,18 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 
 ✅ Exported 586 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
 
+✅ Exported 586 priority gap CVEs to data/processed/CISA-Priority-Gap.csv
+
 ## 📊 Database Statistics
 
 ### Overview
-- **Total CVEs in KEV**: 1,746
+- **Total CVEs in KEV**: 1,748
 - **Scannable with Nuclei**: 526 (30.1%)
 - **With Public PoCs**: **985 (56.4%)**
-- **Unscannable**: 1,220 (69.9%)
+- **Unscannable**: 1,222 (69.9%)
 - **Ransomware-Associated**: 361 (20.7%)
 - **Unique Vendors**: 289
-- **Unique Products**: 705
+- **Unique Products**: 706
 
 ### Key Insights
 - 🎯 **Microsoft** is the most represented vendor with **390 CVEs**
@@ -631,14 +633,14 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 - 🎯 **399 CVEs** have both PoC and Nuclei template (fully testable)
 - 🔓 **586 CVEs** have PoC but no Nuclei template (testing gap)
 - 🦠 **361 CVEs** (20.7%) are known to be used in ransomware campaigns
-- 📅 **33 new CVEs** were added in the last 30 days
+- 📅 **35 new CVEs** were added in the last 30 days
 - 🔒 Most common vulnerability type: **CWE-20** (119 occurrences)
 - ⚠️ **Microsoft** has the highest scanning coverage at 4.6%, while **Apple** and **Google** have 0%
 
 ### Recent Activity (Last 30 Days)
-- **CVEs Added**: 33
+- **CVEs Added**: 35
 - **Scannable Added**: 7
-- **New Coverage**: 21.2%
+- **New Coverage**: 20.0%
 
 ### Top 10 Affected Vendors
 | Rank | Vendor | CVE Count | Scannable | With PoC | Scanning Coverage |
@@ -651,14 +653,14 @@ This repository tracks vulnerabilities from **two authoritative KEV sources**:
 | 6 | Oracle | 46 | 19 | 33 | 41.3% |
 | 7 | Apache | 41 | 38 | 38 | 92.7% |
 | 8 | Ivanti | 36 | 23 | 23 | 63.9% |
-| 9 | Fortinet | 31 | 12 | 18 | 38.7% |
+| 9 | Fortinet | 32 | 12 | 18 | 37.5% |
 | 10 | Linux | 31 | 1 | 18 | 3.2% |
 
 ### Top 10 Vulnerable Products
 | Rank | Product | CVE Count |
 |------|---------|-----------|
 | 1 | Windows | 173 |
-| 2 | Multiple Products | 85 |
+| 2 | Multiple Products | 86 |
 | 3 | Chromium V8 | 41 |
 | 4 | Internet Explorer | 36 |
 | 5 | Kernel | 34 |
